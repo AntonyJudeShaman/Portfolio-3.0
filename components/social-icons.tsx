@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Icons } from "./icons";
+import { Icons } from "./components/icons";
 
 export const SocialMediaIcons = () => (
   <div className="fixed flex flex-row gap-8 justify-center" >

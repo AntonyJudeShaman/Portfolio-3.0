@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import coverImage from "@/public/circles.svg";
 import NavMain from "./nav";
-import { SocialMediaIcons } from "@/components/social-icons";
+import { SocialMediaIcons } from "social-icons";
 import styles from "@/app/page.module.css";
 import { Gradient } from "./gradient";
 import { cn } from "@/lib/utils";
