@@ -10,19 +10,19 @@ import { Input2 } from "./ui/input2";
 import { Gradient4 } from "./gradient";
 import styles from "@/app/page.module.css";
 
-export  default function NewsLetter() {
+export default function NewsLetter() {
   return (
     <div className="md:mx-auto grid md:ml-12 ml-0 md:grid-cols-2 max-w-8xl grid-cols-1 gap-10">
       <div className="md:mt-[7rem] mt-[3rem] mx-auto">
         <div className="p-6">
-          <h2 className="flex mb-4 text-6xl items-center font-display text-zinc-900 dark:text-zinc-100">
+          <h2 className="flex mb-4 md:text-6xl text-5xl items-center font-display bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400 text-transparent">
             Dive into My Chronicles{" "}
           </h2>
           <p className="dmsans mb-6 text-lg">
-            Embark on a journey of knowledge with my exclusive newsletter.
-            Stay ahead with captivating insights, thought-provoking interviews,
-            and expert tips. Subscribe now for your regular dose of valuable
-            content delivered straight to your inbox.
+            Embark on a journey of knowledge with my exclusive newsletter. Stay
+            ahead with captivating insights, thought-provoking interviews, and
+            expert tips. Subscribe now for your regular dose of valuable content
+            delivered straight to your inbox.
           </p>
           <Link href="/blogs" className="group">
             <Button className="text-md poppins" size="lg">

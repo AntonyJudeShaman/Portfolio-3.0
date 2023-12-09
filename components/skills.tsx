@@ -61,7 +61,7 @@ function Skills() {
           className="mt-[8rem] -z-20 md:block lg:hidden xl:hidden 2xl:hidden hidden mx-auto"
         />
         <div className="md:leading-10 md:p-0 p-6 lg:max-w-xl md:max-w-md xl:max-w-full md:text-xl text-md dark:text-white/70 text-black/50 leading-6 mx-auto">
-          <div className="md:text-2xl md:max-w-[30rem] text-2xl mb-7 mt-[8rem] max-w-full poppins dark:text-purple-100 text-black/80">
+          <div className="md:text-3xl md:max-w-[40rem] text-3xl mb-7 mt-[8rem] max-w-full font-display bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400 text-transparent">
             Here are a few technologies I've been working and worked with:
           </div>
           <div className="grid grid-cols-1">

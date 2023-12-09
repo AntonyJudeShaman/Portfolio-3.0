@@ -60,7 +60,7 @@ export const SocialMediaIcons = () => (
 );
 
 export const ToolIcons = () => (
-  <div className=" dmsans grid md:grid-cols-5 grid-cols-4 dark:text-purple-100 text-black/80 gap-y-4 md:gap-x-6 xl:gap-x-12 gap-x-8">
+  <div className=" dmsans grid md:grid-cols-5 grid-cols-4 dark:text-white text-black/80 gap-y-4 md:gap-x-6 xl:gap-x-12 gap-x-8">
     <span className="flex flex-row items-center">
       <TbBrandNextjs className="h-[2.5rem] w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[4rem] md:w-[4rem]" />
     </span>
