@@ -7,7 +7,6 @@ import { Article } from "@/components/article";
 import NavMain from "@/components/nav";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ExternalLink as L } from "lucide-react";
-import Particles from "@/components/particles";
 import { Gradient2, Gradient3, Gradient4 } from "@/components/gradient";
 import styles from "@/app/page.module.css";
 
@@ -192,10 +191,6 @@ export default function Projects() {
                 <Card key={project.name}>
                   <Link href="https://www.bindhomes.com/" target="_blank">
                     <article className="relative group flex-col flex justify-center w-full h-full p-4 md:p-8">
-                      <Particles
-                        className="absolute inset-0 z-10 animate-fade-in"
-                        quantity={20}
-                      />
                       <div className="flex items-center justify-between gap-2">
                         <div className="text-sm text-zinc-900 dark:text-zinc-100">
                           {/* {project.created_at ? (
@@ -278,10 +273,6 @@ export default function Projects() {
                 .map((project) => (
                   <Link href={`${project.html_url}`}>
                     <Card key={project.name}>
-                      <Particles
-                        className="absolute inset-0 z-10 animate-fade-in"
-                        quantity={10}
-                      />
                       <Article project={project} />
                     </Card>
                   </Link>
@@ -294,26 +285,18 @@ export default function Projects() {
               {projects
                 .filter((_, i) => i % 3 === 0)
                 .map((project) => (
-                  <>
-                    <Particles
-                      className="absolute inset-0 z-10 animate-fade-in"
-                      quantity={10}
-                    />
+                  <Card>
                     <Article project={project} />
-                  </>
+                  </Card>
                 ))}
             </div>
             <div className="grid grid-cols-1 gap-4">
               {projects
                 .filter((_, i) => i % 3 === 1)
                 .map((project) => (
-                  <>
-                    <Particles
-                      className="absolute inset-0 z-10 animate-fade-in"
-                      quantity={10}
-                    />
+                  <Card>
                     <Article project={project} />
-                  </>
+                  </Card>
                 ))}
             </div>
             <div className="grid grid-cols-1 mt-10 gap-4">
@@ -321,13 +304,9 @@ export default function Projects() {
                 .filter((_, i) => i % 3 === 2)
                 .map((project) => (
                   // <Link href={`${project.html_url}`} target="_blank">
-                  <>
-                    <Particles
-                      className="absolute inset-0 z-10 animate-fade-in"
-                      quantity={10}
-                    />
+                  <Card>
                     <Article project={project} />
-                  </>
+                  </Card>
                   // </Link>
                 ))}
             </div>
