@@ -6,17 +6,10 @@ import { useEffect, useState, Fragment } from "react";
 import { Article } from "@/components/article";
 import NavMain from "@/components/nav";
 import { Skeleton } from "@/components/ui/skeleton";
-<<<<<<< HEAD
 import { ExternalLink as L } from "lucide-react";
 import Particles from "@/components/particles";
 import { Gradient2, Gradient3, Gradient4 } from "@/components/gradient";
 import styles from "@/app/page.module.css";
-=======
-import { Link as L } from "lucide-react";
-import Particles from "@/components/particles";
-import { Gradient2, Gradient3, Gradient4 } from "@/components/gradient";
-import styles from "@/app/page.module.css"
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
 
 const octokit = new Octokit({
   auth: process.env.NEXT_PUBLIC_GITHUB_TOKEN,
@@ -30,11 +23,7 @@ export default function Projects() {
   async function getProjects() {
     await octokit
       .request(`GET /user/repos`, {
-<<<<<<< HEAD
         per_page: "100",
-=======
-        per_page: "1000",
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
         affiliation: "owner",
         sort: "updated",
       })
@@ -55,15 +44,9 @@ export default function Projects() {
           result
             .filter(
               (project) =>
-<<<<<<< HEAD
                 !["cru", "To-Do-List-in-Nextjs", "Tri2Champ"].includes(
                   project.name
                 )
-=======
-                !project.name.includes("Crude-Oil-Price-Prediction") &&
-                !project.name.includes("Image-Classification") &&
-                !project.name.includes("To-Do-List-in-Nextjs")
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
             )
             .sort(
               (a, b) =>
@@ -79,7 +62,6 @@ export default function Projects() {
   }, []);
 
   const featured = allProjects.filter((project) => {
-<<<<<<< HEAD
     return project.name.includes("To-Do-List-in-Next");
   });
 
@@ -105,17 +87,6 @@ export default function Projects() {
       ],
     },
   };
-=======
-    return project.name.includes("To-Do-List-in-Nextjs");
-  });
-
-  const top2 = allProjects.filter((project) => {
-    return project.name.includes("Image-Classification");
-  });
-  const top3 = allProjects.filter((project) => {
-    return project.name.includes("Crude-Oil-Price-Prediction");
-  });
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
 
   function LoadingSkeleton() {
     return (
@@ -190,11 +161,7 @@ export default function Projects() {
       </div>
       <Gradient2 className={styles.backgroundGradient2} conic />
       <Gradient3 className={styles.backgroundGradient3} conic />
-<<<<<<< HEAD
 
-=======
-      
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
       <Gradient4 className={styles.backgroundGradient4} conic />
       <div className="relative pb-16 pl-0 pr-0 md:pl-6 md:pr-16">
         <div className="px-6 pt-4 md:pl-5 space-y-8 lg:px- md:space-y-16">
@@ -223,24 +190,15 @@ export default function Projects() {
             ) : (
               featured.map((project) => (
                 <Card key={project.name}>
-<<<<<<< HEAD
                   <Link href="https://www.bindhomes.com/" target="_blank">
-=======
-                  <Link href={`${project.html_url}`} target="_blank">
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
                     <article className="relative group flex-col flex justify-center w-full h-full p-4 md:p-8">
                       <Particles
                         className="absolute inset-0 z-10 animate-fade-in"
                         quantity={20}
                       />
                       <div className="flex items-center justify-between gap-2">
-<<<<<<< HEAD
                         <div className="text-sm text-zinc-900 dark:text-zinc-100">
                           {/* {project.created_at ? (
-=======
-                        <div className="text-xs text-zinc-900 dark:text-zinc-100">
-                          {project.created_at ? (
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
                             <time
                               dateTime={new Date(
                                 project.created_at
@@ -252,7 +210,6 @@ export default function Projects() {
                             </time>
                           ) : (
                             <span>SOON</span>
-<<<<<<< HEAD
                           )} */}
                           <time>November 8, 2023</time>
                         </div>
@@ -261,13 +218,6 @@ export default function Projects() {
                           {String.fromCodePoint(
                             0x1f600 + Math.floor(Math.random() * 80)
                           )}
-=======
-                          )}
-                        </div>
-
-                        <span className="dark:text-zinc-500 text-zinc-600 text-xl  flex items-center gap-1">
-                          {project.emoji}
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
                         </span>
                       </div>
 
@@ -276,7 +226,6 @@ export default function Projects() {
                           id="project-post"
                           className="mt-4 text-3xl font-bold duration-1000 dark:text-zinc-100 dark:group-hover:text-white text-zinc-900 group-hover:text-black sm:text-4xl font-display"
                         >
-<<<<<<< HEAD
                           Studio Bind Architects
                         </h2>
                         {/* {project?.homepage.length > 0 && ( */}
@@ -302,27 +251,6 @@ export default function Projects() {
                       </p>
                       <p className="relative z-10 mt-6 flex flex-wrap text-sm font-medium text-gray-500 dark:text-gray-400">
                         {projectData?.project?.topics?.map((topic, index) => (
-=======
-                          {project?.name?.charAt(0)?.toUpperCase() +
-                            project?.name?.slice(1)}
-                        </h2>
-                        {project?.homepage.length > 0 && (
-                          <Link
-                            href={project.homepage}
-                            target="_blank"
-                            className="hidden flex items-center justify-center hover:text-blue-400 text-blue-700 group-hover:block"
-                          >
-                            <L size={28} />
-                          </Link>
-                        )}
-                      </div>
-
-                      <p className="mt-4 leading-8 duration-1000 text-zinc-600 group-hover:text-zinc-700 dark:text-zinc-400 dark:group-hover:text-zinc-300">
-                        {project.description}
-                      </p>
-                      <p className="relative z-10 mt-6 flex flex-wrap text-sm font-medium text-gray-500 dark:text-gray-400">
-                        {project?.topics?.map((topic, index) => (
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
                           <span
                             key={index}
                             className="my-1 mr-2 px-3 py-1 inline-flex items-center rounded-full bg-slate-300 text-gray-800 dark:bg-slate-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700"
@@ -348,7 +276,6 @@ export default function Projects() {
                 .flat()
                 .filter((project) => project)
                 .map((project) => (
-<<<<<<< HEAD
                   <Link href={`${project.html_url}`}>
                     <Card key={project.name}>
                       <Particles
@@ -368,52 +295,24 @@ export default function Projects() {
                 .filter((_, i) => i % 3 === 0)
                 .map((project) => (
                   <>
-=======
-                  <Card key={project.name}>
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
                     <Particles
                       className="absolute inset-0 z-10 animate-fade-in"
                       quantity={10}
                     />
                     <Article project={project} />
-<<<<<<< HEAD
                   </>
-=======
-                  </Card>
-                ))}
-            </div>
-          </div>
-          <div className="hidden w-full h-px md:block bg-zinc-200 dark:bg-zinc-800" />
-          <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
-            <div className="grid grid-cols-1 gap-4">
-              {projects
-                .filter((_, i) => i % 3 === 0)
-                .map((project) => (
-                  <Card key={project.name}>
-                    <Particles
-                      className="absolute inset-0 z-10 animate-fade-in"
-                      quantity={10}
-                    />
-                    <Article project={project} />
-                  </Card>
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
                 ))}
             </div>
             <div className="grid grid-cols-1 gap-4">
               {projects
                 .filter((_, i) => i % 3 === 1)
                 .map((project) => (
-<<<<<<< HEAD
                   <>
-=======
-                  <Card key={project.name}>
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
                     <Particles
                       className="absolute inset-0 z-10 animate-fade-in"
                       quantity={10}
                     />
                     <Article project={project} />
-<<<<<<< HEAD
                   </>
                 ))}
             </div>
@@ -423,27 +322,13 @@ export default function Projects() {
                 .map((project) => (
                   // <Link href={`${project.html_url}`} target="_blank">
                   <>
-=======
-                  </Card>
-                ))}
-            </div>
-            <div className="grid grid-cols-1 gap-4">
-              {projects
-                .filter((_, i) => i % 3 === 2)
-                .map((project) => (
-                  <Card key={project.name}>
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
                     <Particles
                       className="absolute inset-0 z-10 animate-fade-in"
                       quantity={10}
                     />
                     <Article project={project} />
-<<<<<<< HEAD
                   </>
                   // </Link>
-=======
-                  </Card>
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
                 ))}
             </div>
           </div>

@@ -11,17 +11,10 @@ export const navConfig: NavConfig = {
       title: "Projects",
       href: "/projects",
     },
-<<<<<<< HEAD
     // {
     //   title: "About",
     //   href: "/about",
     // },
-=======
-    {
-      title: "About",
-      href: "/about",
-    },
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
     {
       title: "Contact",
       href: "/contact",

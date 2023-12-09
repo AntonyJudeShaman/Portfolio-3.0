@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import { Gradient } from "./gradient";
 import styles from "@/app/page.module.css";
@@ -42,20 +41,3 @@ export default function Tools() {
     </div>
   );
 }
-=======
-import Head from "next/head";
-import { Card, CardContent, CardTitle } from "./ui/card";
-
-function Tool({ title, children }) {
-  return (
-    <Card>
-      <CardTitle>{title}</CardTitle>
-      <CardContent>{children}</CardContent>
-    </Card>
-  );
-}
-
-export default function Tools() {
-  return <></>;
-}
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Icons } from "./icons";
-<<<<<<< HEAD
 import { DiReact, DiHtml5, DiCss3, DiPostgresql } from "react-icons/di";
 import {
   SiVisualstudiocode,
@@ -22,39 +21,25 @@ import { TbBrandNextjs, TbBrandRadixUi } from "react-icons/tb";
 
 export const SocialMediaIcons = () => (
   <div className="flex flex-row gap-8 mt-5">
-=======
-
-export const SocialMediaIcons = () => (
-  <div className="fixed flex flex-row gap-8 justify-center" >
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
     <Link
       href="https://www.instagram.com/stark_shaman/"
       target="_blank"
       rel="noopener noreferrer"
     >
-<<<<<<< HEAD
       <Icons.insta className="dark:hover:text-teal-200 hover:text-purple-800 text-purple-600 dark:text-teal-400 hover:-translate-y-1 duration-300 h-[28px] w-[28px]" />
-=======
-      <Icons.insta className="dark:hover:text-purple-600/60  hover:text-purple-600/60 hover:-translate-y-1 duration-300 h-[20px] w-[20px]" />
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
     </Link>
     <Link
       href="https://github.com/AntonyJudeShaman"
       target="_blank"
       rel="noopener noreferrer"
     >
-<<<<<<< HEAD
       <Icons.gitHub className="dark: dark:hover:text-teal-200 hover:text-purple-800 text-purple-600 dark:text-teal-400 hover:-translate-y-1 duration-300 h-[28px] w-[28px]" />
-=======
-      <Icons.gitHub className="dark: dark:hover:text-purple-600/60  hover:text-purple-600/60 hover:-translate-y-1 duration-300 h-[20px] w-[20px]" />
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
     </Link>
     <Link
       href="https://www.linkedin.com/in/antony-jude-shaman/"
       target="_blank"
       rel="noopener noreferrer"
     >
-<<<<<<< HEAD
       <Icons.linkedin className="dark: dark:hover:text-teal-200 hover:text-purple-800 text-purple-600 dark:text-teal-400 hover:-translate-y-1 duration-300 h-[28px] w-[28px]" />
     </Link>
     <Link
@@ -138,23 +123,3 @@ export const ToolIcons = () => (
     </span>
   </div>
 );
-=======
-      <Icons.linkedin className="dark: dark:hover:text-purple-600/60 hover:text-purple-600/60 hover:-translate-y-1 duration-300 h-[20px] w-[20px]" />
-    </Link>
-    <Link
-      href="https://instagram.com/stark-shaman"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Icons.twitter className="dark: dark:hover:text-purple-600/60 hover:text-purple-600/60 hover:-translate-y-1 duration-300 h-[20px] w-[20px]" />
-    </Link>
-    <Link
-      href="https://github.com/AntonyJudeShaman"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Icons.codepen className="dark: dark:hover:text-purple-600/60 hover:text-purple-600/60 hover:-translate-y-1 duration-300 h-[20px] w-[20px]" />
-    </Link>
-  </div>
-);
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373

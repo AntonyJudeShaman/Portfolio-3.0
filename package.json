@@ -37,10 +37,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.1",
-<<<<<<< HEAD
     "react-icons": "^4.12.0",
-=======
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
     "react-transition-group": "^4.4.5",
     "styled-components": "^6.1.1",
     "tailwind-merge": "^2.0.0",

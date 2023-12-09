@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import toolsImage from "@/public/images/tools.png";
 import Image from "next/image";
@@ -82,14 +81,3 @@ function Skills() {
 }
 
 export default Skills;
-=======
-import React from 'react'
-
-function Skills() {
-  return (
-    <div>Skills</div>
-  )
-}
-
-export default Skills
->>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
