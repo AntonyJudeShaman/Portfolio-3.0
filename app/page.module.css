@@ -125,6 +125,7 @@
   height: 120px;
 }
 
+<<<<<<< HEAD
 .logoGradient3 {
   opacity: 0.15;
   top: -50px;
@@ -150,6 +151,8 @@
   height: 250px;
 }
 
+=======
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
 @media (max-width: 500px) {
   .backgroundGradient {
     top: -250px;

@@ -23,6 +23,7 @@
   font-weight: 300;
 }
 
+<<<<<<< HEAD
 .steel-text {
   background: linear-gradient(45deg, #ff6b6b, #ffa07a);
   background-clip: text;
@@ -40,6 +41,8 @@
 }
 
 
+=======
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
 .stickyy {
   background-color: #040041a9 !important;
   transition: all 0.5s ease-out 0s !important;

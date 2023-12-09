@@ -155,7 +155,11 @@ function BlogHead() {
                       Lorem ipsum dolor sit .
                     </p>
                   </h2>
+<<<<<<< HEAD
                   <div className="text-md overflow-hidden poppins">
+=======
+                  <div className="text-md overflow-hidden font-sans">
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Iure eum eaque laboriosam deleniti dolores quidem alias
                     veniam id, odit optio. Suscipit quidem id maxime officia

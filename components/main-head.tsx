@@ -2,7 +2,10 @@ import Image from "next/image";
 import React from "react";
 import coverImage from "@/public/circles.svg";
 import NavMain from "./nav";
+<<<<<<< HEAD
 import myLogo from "@/public/me.png";
+=======
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
 import { SocialMediaIcons } from "@/components/social-icons";
 import styles from "@/app/page.module.css";
 import { Gradient } from "./gradient";
@@ -13,6 +16,7 @@ function MainHead() {
     <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-4 md:ml-6 max-w-screen">
       <NavMain />
       <div className="flex flex-row">
+<<<<<<< HEAD
         <div className="flex md:pl-5 ml-10 mt-36 md:mt-28 lg:mt-32 md:ml-0 flex-col md:m-0 m-6 text-left">
           <p
             className="md:text-4xl sm:text-4xl dark:text-white/90 text-black flex flex-col text-4xl lg:text-5xl 2xl:text-6xl md:mt-20 lg:mt-12 xl:text-6xl font-display 2xl:max-w-6xl xl:max-w-3xl max-w-md md:max-w-5xl lg:max-w-3xl text-left mb-"
@@ -27,6 +31,14 @@ function MainHead() {
             style={{ zIndex: 15 }}
           >
             Antony Jude Shaman{" "}
+=======
+        <div className="flex md:pl-5 ml-10 mt-24 md:mt-28 lg:mt-32 md:ml-0 flex-col md:m-0 m-6 text-left">
+          <p
+            className="md:text-6xl sm:text-5xl text-6xl lg:text-6xl 2xl:text-8xl md:mt-20 lg:mt-12 xl:text-6xl font-display 2xl:max-w-4xl xl:max-w-3xl max-w-md lg:max-w-3xl text-left mb-"
+            aria-label="Hello! I am Antony Jude Shaman"
+          >
+            Hello! I am Antony Jude Shaman
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
           </p>
           <p
             className="home-title max-w-screen poppins mr-5 md:mr-0 font-pops text-xl md:text-lg mt-5 2xl:text-xl xl:text-xl  mb-4  text-left"
@@ -34,8 +46,20 @@ function MainHead() {
           >
             I am currently a final year undergraduate student
           </p>
+<<<<<<< HEAD
           <SocialMediaIcons />
           <Gradient className={styles.logoGradient2} conic />
+=======
+          <Image
+            src={coverImage}
+            priority
+            alt="about cover image"
+            className=" md:hidden mt-5 -ml-3 block"
+            width={510}
+            height={510}
+          />
+          <Gradient className={styles.logoGradient2} conic/> 
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
         </div>
 
         <div className="flex justify-center md:block hidden lg:mt-12 md:mt-28 ">
@@ -52,7 +76,11 @@ function MainHead() {
                 height={1414}
                 src="circles.svg"
                 width={1414}
+<<<<<<< HEAD
                 className="invert 2xl:block hidden xl:block pl-52 pt-52 dark:invert-0 "
+=======
+                className="invert 2xl:block hidden xl:block pl-10 pt-10 dark:invert-0 "
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
                 style={{ overflow: "hidden" }}
                 priority={true}
               />
@@ -60,7 +88,11 @@ function MainHead() {
             <div
               className={cn(
                 styles.circles2,
+<<<<<<< HEAD
                 "2xl:hidden xl:hidden block"
+=======
+                "2xl:hidden xl:hidden sm:hidden hidden lg:block md:block"
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
               )}
             >
               <Image

@@ -89,9 +89,12 @@ dependencies:
   react-hot-toast:
     specifier: ^2.4.1
     version: 2.4.1(csstype@3.1.2)(react-dom@18.2.0)(react@18.2.0)
+<<<<<<< HEAD
   react-icons:
     specifier: ^4.12.0
     version: 4.12.0(react@18.2.0)
+=======
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
   react-transition-group:
     specifier: ^4.4.5
     version: 4.4.5(react-dom@18.2.0)(react@18.2.0)
@@ -4966,6 +4969,7 @@ packages:
       - csstype
     dev: false
 
+<<<<<<< HEAD
   /react-icons@4.12.0(react@18.2.0):
     resolution: {integrity: sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==}
     peerDependencies:
@@ -4974,6 +4978,8 @@ packages:
       react: 18.2.0
     dev: false
 
+=======
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false

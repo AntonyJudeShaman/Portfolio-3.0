@@ -1,6 +1,10 @@
 import React from "react";
 import AboutHead from "@/components/about-head";
+<<<<<<< HEAD
 import Contact from "@/components/newsletter";
+=======
+import Contact from "@/components/contact";
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
 import { Contactform } from "@/components/contact-form";
 import NavMain from "@/components/nav";
 import styles from "@/app/page.module.css";

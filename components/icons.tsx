@@ -17,13 +17,20 @@ import {
   Linkedin,
   Loader2,
   LucideProps,
+<<<<<<< HEAD
   Mail,
+=======
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
   Moon,
   MoreVertical,
   Pizza,
   Plus,
   Settings,
+<<<<<<< HEAD
   Sun,
+=======
+  SunMedium,
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
   Trash,
   Twitter,
   User,
@@ -45,7 +52,10 @@ export const Icons = {
   codepen:Codepen,
   fab: FacebookIcon,
   gitHub:Github,
+<<<<<<< HEAD
   mail: Mail,
+=======
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
   post: FileText,
   page: File,
   linkedin: Linkedin,
@@ -60,7 +70,11 @@ export const Icons = {
   arrowRight: ArrowRight,
   help: HelpCircle,
   pizza: Pizza,
+<<<<<<< HEAD
   sun: Sun,
+=======
+  sun: SunMedium,
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
   moon: Moon,
   laptop: Laptop,
   youtube: YoutubeIcon,

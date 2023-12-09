@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+<<<<<<< HEAD
 import { NewsLetter } from "@/components/newsletter";
 import styles from "@/app/page.module.css";
 import { Gradient, Gradient2 } from "@/components/gradient";
@@ -8,6 +9,13 @@ import AboutMe from "@/components/about-me";
 import Tools from "@/components/tools";
 import Skills from "@/components/skills";
 import SiteFooter from "@/components/site-footer"
+=======
+import Contact from "@/components/contact";
+import styles from "@/app/page.module.css";
+import { Gradient, Gradient2 } from "@/components/gradient";
+import MainHead from "@/components/main-head";
+import { Contactform } from "../components/contact-form";
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
 
 export default function Page(): JSX.Element {
   return (
@@ -21,11 +29,15 @@ export default function Page(): JSX.Element {
         </div>
       </div>
 
+<<<<<<< HEAD
       <AboutMe />
       <Tools />
       <Skills />
       <NewsLetter/>
       <SiteFooter/>
+=======
+      <Contactform className=""/>
+>>>>>>> cf77c012a0a4fbde0cea55df8b7396c463520373
     </>
   );
 }
