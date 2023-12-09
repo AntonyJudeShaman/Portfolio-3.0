@@ -20,7 +20,7 @@ import { GrMysql } from "react-icons/gr";
 import { TbBrandNextjs, TbBrandRadixUi } from "react-icons/tb";
 
 export const SocialMediaIcons = () => (
-  <div className="flex flex-row gap-8 mt-5">
+  <div className="flex flex-row gap-8 mt-5" style={{ zIndex: -9 }}>
     <Link
       href="https://www.instagram.com/stark_shaman/"
       target="_blank"

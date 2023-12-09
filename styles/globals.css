@@ -80,8 +80,8 @@
     --glow-conic2: conic-gradient(
       from 180deg at 50% 50%,
       #2a8af6 0deg,
-      #e92a67 180deg,
-      #f69e2a 270deg,
+      #d4004e 180deg,
+      #2ad1f6 270deg,
       #53b6ba 360deg
     );
     --glow-conic3: conic-gradient(
@@ -117,8 +117,8 @@
     --glow-conic2: conic-gradient(
       from 180deg at 50% 50%,
       #2a8af6 0deg,
-      #e92a67 180deg,
-      #f69e2a 270deg,
+      #bf013d 180deg,
+      #2adbf6 270deg,
       #53b0ba 360deg
     );
     --glow-conic3: conic-gradient(

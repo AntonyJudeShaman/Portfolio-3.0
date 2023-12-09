@@ -17,14 +17,14 @@ function MainHead() {
           <p
             className="md:text-4xl sm:text-4xl dark:text-white/90 text-black flex flex-col text-4xl lg:text-5xl 2xl:text-6xl md:mt-20 lg:mt-12 xl:text-6xl font-display 2xl:max-w-6xl xl:max-w-3xl max-w-md md:max-w-5xl lg:max-w-3xl text-left mb-"
             aria-label="Hello! I am Antony Jude Shaman"
-            style={{ zIndex: 15 }}
+            style={{ zIndex: 10 }}
           >
             Hello! I'm
           </p>
           <p
             className="md:text-6xl mt-2 sm:text-6xl dark:text-white/90 text-black about-heading flex flex-col text-6xl lg:text-7xl 2xl:text-8xl xl:text-8xl font-display 2xl:max-w-8xl xl:max-w-6xl sm:max-w-3xl max-w-md md:max-w-7xl lg:max-w-6xl text-left mb-"
             aria-label="Hello! I am Antony Jude Shaman"
-            style={{ zIndex: 15 }}
+            style={{ zIndex: 10 }}
           >
             Antony Jude Shaman{" "}
           </p>

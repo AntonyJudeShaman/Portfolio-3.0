@@ -20,7 +20,7 @@ export function MainNav({ items, children }: MainNavProps) {
   };
 
   return (
-    <div className="flex max-w-full bg-transparent md:gap-10">
+    <div className="flex z-50 max-w-full bg-transparent md:gap-10">
       <div className="ml-auto">
         
       <Link
@@ -44,9 +44,9 @@ export function MainNav({ items, children }: MainNavProps) {
           style={{zIndex:999999}} 
         >
           {showMobileMenu ? (
-            <Icons.close style={{zIndex:99999999}} />
+            <Icons.close style={{zIndex:9999999999}} />
           ) : (
-            <div className="burger invert dark:invert-0" style={{zIndex:99999999}}>
+            <div className="burger invert dark:invert-0" style={{zIndex:999999999}}>
               <input type="checkbox" id="burger" />
               <span></span>
               <span></span>

@@ -23,7 +23,7 @@ export const Article = ({ project }: { project: any }) => {
             </span>
           </div>
           <div className="flex flex-row justify-between items-center">
-            <h2 className="z-20 mt-2 text-2xl font-medium duration-1000 lg:text-3xl text-zinc-700 group-hover:text-black dark:text-gray-100 dark:group-hover:text-white font-display">
+            <h2 className="z-20 mt-2 text-3xl md:text-4xl font-medium duration-1000 lg:text-3xl text-zinc-700 group-hover:text-black dark:text-gray-100 dark:group-hover:text-white font-display">
               {project?.name?.charAt(0)?.toUpperCase() +
                 project?.name?.slice(1)}
             </h2>
@@ -37,14 +37,14 @@ export const Article = ({ project }: { project: any }) => {
               </Link>
             )}
           </div>
-          <p className="z-20 mt-4 dmsans leading-6 text-sm  duration-1000 font-pops dark:text-zinc-400 dark:group-hover:text-zinc-200 text-zinc-600 group-hover:text-zinc-900">
+          <p className="z-20 mt-4 dmsans leading-6 text-md  duration-1000 font-pops dark:text-zinc-400 dark:group-hover:text-zinc-200 text-zinc-600 group-hover:text-zinc-900">
             {project.description}
           </p>
           <p className="relative poppins z-10 mt-6 flex flex-wrap text-sm font-medium text-gray-500 dark:text-gray-400">
             {project?.topics?.map((topic: [], index: number) => (
               <span
                 key={index}
-                className="my-1 mr-2 px-3 py-1 inline-flex items-center rounded-full bg-slate-300 text-gray-800 dark:bg-slate-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700"
+                className="my-1 hover:opacity-70 mr-2 px-3 py-1 inline-flex items-center rounded-full bg-slate-300 text-gray-800 dark:bg-slate-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700"
               >
                 <svg
                   className="-ml-0.5 mr-1.5 h-2 w-2 text-blue-600"

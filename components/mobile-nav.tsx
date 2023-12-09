@@ -20,9 +20,11 @@ export function MobileNav({ items, children }: MobileNavProps) {
   return (
     <div
       className={cn(
-        "slide-in-from-right backdrop-blur-3xl top-0 max-w-100 max-w-full max-h-screen fixed inset-0 z-50 grid  grid-flow-row auto-rows-max overflow-auto shadow-md animate-in md:hidden"
+        "slide-in-from-right backdrop-blur-3xl dark:bg-zinc-900 bg-slate-400 top-0 max-w-100 max-w-full max-h-screen fixed inset-0 z-50 grid  grid-flow-row auto-rows-max overflow-auto shadow-md animate-in md:hidden"
       )}
-      style={{zIndex:9999999}}
+      style={{
+        zIndex: 9999999,
+      }}
     >
       <Gradient className={styles.backgroundGradient} conic />
       <div className="relative z-80 grid gap-6 h-screen bg p-4 text-popover-foreground shadow-md">

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { NewsLetter } from "@/components/newsletter";
+import NewsLetter from "@/components/newsletter";
 import styles from "@/app/page.module.css";
 import { Gradient, Gradient2 } from "@/components/gradient";
 import MainHead from "@/components/main-head";

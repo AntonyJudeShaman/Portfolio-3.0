@@ -8,7 +8,7 @@ import ProjectPage from "@/components/projects-page";
 
 function About() {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto z-30">
       <ProjectPage />
       <div className="md:-ml-12">
         <SiteFooter />

@@ -31,6 +31,7 @@ export default function NavMain({
         <p
           className="logo-font select-none md:hidden pl-6 md:pl-2  flex-1 text-4xl font-bold"
           aria-label="BIND"
+          style={{ zIndex: 999999999 }}
         >
           Antony
         </p>
