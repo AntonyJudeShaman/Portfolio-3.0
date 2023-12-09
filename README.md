@@ -1,23 +1,84 @@
-# Next.js Contentlayer Example
+<h1 align="center">
+  Portfolio - v3.0
+</h1>
+<p align="center">
+  Built with Nextjs and hosted on Vercel.
+</p>
+Welcome to my portfolio website! This repository contains the code for my personal portfolio.
 
-## Demo
+## Prerequisites
 
-View the deployed project: [Demo](https://next-contentlayer-example.vercel.app/)
+Before you begin, ensure you have the following installed on your machine:
 
-## Try it Now
+- [Node.js](https://nodejs.org/) (npm will be installed with Node.js)
+- [Git](https://git-scm.com/)
 
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](http://gitpod.io/#https://github.com/contentlayerdev/next-contentlayer-example)
+## Clone the Repository
 
-## Local Installation
+```
+git clone https://github.com/AntonyJudeShaman/portfolioV3.0.git
+cd portfolioV3.0
+```
 
-Clone the project:
+## Install Dependencies
 
-    git clone git@github.com:contentlayerdev/next-contentlayer-example.git
+`npm i` or ```pnpm i``` or ```yarn```
 
-Install dependencies:
+## Set Up Environment Variables
+Copy the `.env.example` file to `.env.local` and update the values as needed
 
-    yarn
+```
+cp .env.example .env.local
+```
 
-Run dev server:
+## Run the Application
 
-    yarn dev
+```
+npm run dev
+```
+
+or 
+
+```
+pnpm run dev
+```
+
+or 
+
+```
+yarn run dev
+```
+
+
+### **Visit http://localhost:3000 in your web browser to view the portfolio.**  
+
+
+## Project Structure
+
+## Root Directory
+
+- 📁 **.contentlayer**: Content layer configuration and data
+- 📁 **app**: Main application code
+  - 📁 **blogs**: Blog-related components and pages
+  - 📁 **contact**: Contact-related components and pages
+  - 📁 **projects**: Project-related components and pages
+  - 📁 **components**: Reusable components
+    - 📁 **ui**: UI-specific components
+  - 📁 **config**: Configuration files
+  - 📁 **hooks**: Custom hooks
+  - 📁 **public**: Public assets
+    - 📁 **images**: Image assets
+    - 📁 **fonts**: Font assets
+  - 📁 **styles**: Stylesheets
+    - 📄 **globals.css**: Global styles
+  - 📁 **types**: TypeScript type definitions
+  - 📁 **util**: Utility functions
+
+
+## Deployment  
+This project is deployed on <a href="https://vercel.com">**Vercel**</a>
+
+## Issues and Contributions
+If you encounter any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
+
+_*Happy coding!*_
