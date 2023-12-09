@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+
+# next
+dist
+.next
+
+# contentlayer
+.contentlayer
+
+# yarn
+yarn.lock
+yarn-error.log
+
+# mac
+.DS_Store
+
+.env
+.env.local
