@@ -5,9 +5,9 @@ import { Card } from "./cardeffect";
 export const Article = ({ project }: { project: any }) => {
   return (
     <Link href={`${project.html_url}`} target="_blank">
-        <article className="p-4 md:p-8">
+        <article className="p-6 md:p-8">
           <div className="flex justify-between gap-2 items-center">
-            <span className="text-xs duration-1000 text-slate-700 font-sans group-hover:text-black group-hover:border-zinc-800 dark:text-slate-200 dark:group-hover:text-white dark:group-hover:border-zinc-200 drop-shadow-orange">
+            <span className="text-xs poppins duration-1000 text-slate-700 font-sans group-hover:text-black group-hover:border-zinc-800 dark:text-slate-200 dark:group-hover:text-white dark:group-hover:border-zinc-200 drop-shadow-orange">
               {project.created_at ? (
                 <time dateTime={new Date(project.created_at).toISOString()}>
                   {Intl.DateTimeFormat(undefined, {
@@ -23,7 +23,7 @@ export const Article = ({ project }: { project: any }) => {
             </span>
           </div>
           <div className="flex flex-row justify-between items-center">
-            <h2 className="z-20 mt-2 text-xl font-medium duration-1000 lg:text-3xl text-zinc-700 group-hover:text-black dark:text-gray-100 dark:group-hover:text-white font-display">
+            <h2 className="z-20 mt-2 text-2xl font-medium duration-1000 lg:text-3xl text-zinc-700 group-hover:text-black dark:text-gray-100 dark:group-hover:text-white font-display">
               {project?.name?.charAt(0)?.toUpperCase() +
                 project?.name?.slice(1)}
             </h2>
@@ -37,10 +37,10 @@ export const Article = ({ project }: { project: any }) => {
               </Link>
             )}
           </div>
-          <p className="z-20 mt-4 leading-6 text-sm  duration-1000 font-pops dark:text-zinc-400 dark:group-hover:text-zinc-200 text-zinc-600 group-hover:text-zinc-900">
+          <p className="z-20 mt-4 dmsans leading-6 text-sm  duration-1000 font-pops dark:text-zinc-400 dark:group-hover:text-zinc-200 text-zinc-600 group-hover:text-zinc-900">
             {project.description}
           </p>
-          <p className="relative z-10 mt-6 flex flex-wrap text-sm font-medium text-gray-500 dark:text-gray-400">
+          <p className="relative poppins z-10 mt-6 flex flex-wrap text-sm font-medium text-gray-500 dark:text-gray-400">
             {project?.topics?.map((topic: [], index: number) => (
               <span
                 key={index}

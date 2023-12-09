@@ -1,8 +1,6 @@
 import React from "react";
 import AboutHead from "@/components/about-head";
-import Contact from "@/components/newsletter";
-import { Contactform } from "@/components/contact-form";
-import NavMain from "@/components/nav";
+import SiteFooter from "@/components/site-footer";
 import styles from "@/app/page.module.css";
 import { Gradient2 } from "@/components/gradient";
 import Tools from "@/components/tools";
@@ -20,7 +18,9 @@ function About() {
       <div className="md:m-6 m-0 mb-10 mx-auto justify-center flex">
         <Tools />
       </div>
-
+      <div className="md:-ml-12">
+        <SiteFooter />
+      </div>
     </div>
   );
 }

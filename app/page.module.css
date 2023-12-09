@@ -133,13 +133,13 @@
 }
 
 .logoGradient4 {
-  opacity: 0.3;
+  opacity: 0.25;
   width: 600px;
-  height: 600px;
+  height: 330px;
 }
 
 .logoGradient5 {
-  opacity: 0.25;
+  opacity: 0.18;
   width: 400px;
   height: 400px;
 }
@@ -148,6 +148,20 @@
   opacity: 0.2;
   width: 250px;
   height: 250px;
+}
+
+@media (max-width: 500px) {
+  .logoGradient4 {
+    opacity: 0.25;
+    width: 300px;
+    height: 330px;
+  }
+  
+  .logoGradient5 {
+    opacity: 0.18;
+    width: 140px;
+    height: 600px;
+  }
 }
 
 @media (max-width: 500px) {

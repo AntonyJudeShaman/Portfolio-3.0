@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { NewsLetter } from "@/components/newsletter";
 import styles from "@/app/page.module.css";

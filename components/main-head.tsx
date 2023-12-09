@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 
 function MainHead() {
   return (
-    <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-4 md:ml-6 max-w-screen">
+    <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-4 md:ml-6 min-h-screen max-w-screen">
       <NavMain />
       <div className="flex flex-row">
         <div className="flex md:pl-5 ml-10 mt-36 md:mt-28 lg:mt-32 md:ml-0 flex-col md:m-0 m-6 text-left">

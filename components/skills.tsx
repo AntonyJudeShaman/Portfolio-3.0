@@ -9,7 +9,7 @@ import { ToolIcons } from "./social-icons";
 function Skills() {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center overflow-hidden overflow-x-hidden ">
         <div
           className={cn(
             styles.logos,
@@ -71,8 +71,8 @@ function Skills() {
         <Image
           src={toolsImage}
           alt="tools image"
-          width={380}
-          height={380}
+          width={320}
+          height={320}
           className="mt-[2rem] md:hidden block mx-auto"
         />
       </div>

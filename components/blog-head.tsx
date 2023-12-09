@@ -65,7 +65,7 @@ function BlogHead() {
   return (
     <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-6 md:ml-0 md:min-h-screen  max-w-screen">
       <NavMain />
-      <div className="lg:mx-aut flex flex-row">
+      <div className="flex flex-row">
         <div className=" flex justify-center ml-5 sm:ml-5 mt-2 md:mt-12 lg:mt-0 2xl:mt-0 xl:mt-0 2xl:l-10 xl:-ml-5 lg:-ml-5 md:-ml-5 mx-auto lg:flex-row flex-col md:m-0 m-6 text-left">
           <div className="block lg:hidden">
             <p
@@ -116,7 +116,6 @@ function BlogHead() {
               height={300}
               style={{ zIndex: -1 }}
             />
-            <div className="border-t border-gray-500 my-4"></div>
 
             <Image
               src={coverImage}
@@ -127,15 +126,15 @@ function BlogHead() {
               height={300}
               style={{ zIndex: -1 }}
             />
-            <div className="border-t border-gray-500 my-4"></div>
           </div>
+            <div className="border-t border-gray-500 my-4"></div>
           <div className="grid md:grid-cols-1 mt-6 grid-cols-1 md:ml-4 xl:max-w-2xl lg:max-w-xl md:max-w-[50rem] mx-auto gap-6">
             {blogs.map((blog, idx) => (
               <BlogCard key={idx} {...blog} />
             ))}
           </div>
           <div className=" lg:block hidden" style={{ zIndex: 10 }}>
-            <p className="text-5xl ml-10 mt-8 font-display duration-200">
+            <p className="text-6xl ml-10 dark:text-white/90 text-black -z-20 mt-8 font-display duration-200">
               Featured Article
             </p>
             <div
@@ -143,19 +142,19 @@ function BlogHead() {
               className="ml-8 xl:max-w-[500px] 2xl:max-w-[600px] lg:max-w-[400px] duration-200  opacity-100 absolute 2xl:top-3/4 xl:top-3/4 lg:top-2/3 transform  -translate-y-1/2"
             >
               <Link href="#" style={{ zIndex: 10 }}>
-                <div className=" group dark:bg-transparent duration-500 xl:mt-8 2xl:pt-10 lg:pt-5 xl:p-6 2xl:p-6 p-4 h-full">
+                <div className=" group dark:bg-transparent dark:text-white text-black duration-500 xl:mt-8 2xl:pt-10 lg:pt-5 xl:p-6 2xl:p-6 p-4 h-full">
                   <time
                     dateTime=""
                     className="block mb-4 font-bold font-pops text-sm"
                   >
                     October 21, 2023
                   </time>
-                  <h2 className="text-3xl font-bold mb-4">
-                    <p className="dark:text-white dark:hover:text-white/90 text-black hover:text-black/90 font-display">
+                  <h2 className="text-3xl font-bold mb-4 z-20">
+                    <p className="dark:text-white  text-black hover:text-black/90 font-display">
                       Lorem ipsum dolor sit .
                     </p>
                   </h2>
-                  <div className="text-md overflow-hidden poppins">
+                  <div className="text-md overflow-hidden poppins z-30">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Iure eum eaque laboriosam deleniti dolores quidem alias
                     veniam id, odit optio. Suscipit quidem id maxime officia
@@ -175,7 +174,7 @@ function BlogHead() {
               className="2xl:block xl:hidden m-10 hidden dark:opacity-40 opacity-40 relative"
               width={700}
               height={600}
-              style={{ zIndex: -20 }}
+              style={{ zIndex: -1 }}
             />
             <Image
               src={coverImage}

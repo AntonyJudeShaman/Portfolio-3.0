@@ -43,34 +43,34 @@ export default function NavMain({
           <MainNav items={navConfig.mainNav} />
         </div>
 
-        {isHydrated && (
-          <nav
-            className="justify-center flex flex-row items-center"
-            style={{ zIndex: 99999 }}
-          >
-            {navConfig &&
-              navConfig.mainNav.map((item, index) => (
-                <>
-                  <Link
-                    key={index}
-                    aria-label={item.title}
-                    href={item.disabled ? "#" : item.href}
-                    className={cn(
-                      "group relative flex flex-col justify-center text-right text-lg items-center overflow-hidden poppins hidden mr-4 dark:text-zinc-300 text-zinc-900 md:inline-block rounded-md p-2 font-medium",
-                      item.disabled && "cursor-not-allowed opacity-60",
-                      "relative overflow-hidden after:relative after:flex after:items-center after:content-'' after:w-0 after:h-[2px] dark:after:bg-orange-400 after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full",
-                      "after:mt-2" 
-                    )}
-                  >
-                    <span className="">{item.title}</span>
-                  </Link>
-                </>
-              ))}
+        <nav
+          className="justify-center flex flex-row items-center"
+          style={{ zIndex: 99999 }}
+        >
+          {navConfig &&
+            navConfig.mainNav.map((item, index) => (
+              <>
+                <Link
+                  key={index}
+                  aria-label={item.title}
+                  href={item.disabled ? "#" : item.href}
+                  className={cn(
+                    "group relative flex flex-col justify-center text-right text-lg items-center overflow-hidden poppins hidden mr-4 dark:text-zinc-300 text-zinc-900 md:inline-block rounded-md p-2 font-medium",
+                    item.disabled && "cursor-not-allowed opacity-60",
+                    "relative overflow-hidden after:relative after:flex after:items-center after:content-'' after:w-0 after:h-[2px] dark:after:bg-orange-400 after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full",
+                    "after:mt-2"
+                  )}
+                >
+                  <span className="">{item.title}</span>
+                </Link>
+              </>
+            ))}
+          {isHydrated && (
             <div className="hidden md:block">
               <ModeToggle />
             </div>
-          </nav>
-        )}
+          )}
+        </nav>
       </div>
     </div>
   );

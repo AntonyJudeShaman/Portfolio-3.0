@@ -86,40 +86,40 @@ export const ToolIcons = () => (
       <GrMysql className="h-[2.5rem] w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.2rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <SiPrisma className="h-[2.5rem] w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.4rem] md:w-[4rem]" />
+      <SiPrisma className="h-[2.5rem] w-[2.5rem] md:mt-0 mt-3 hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.4rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <SiTypescript className="h-[2.5rem] w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.3rem] md:w-[4rem]" />
+      <SiTypescript className="h-[2.5rem] w-[2.5rem] md:mt-0 mt-3 hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.3rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <SiPython className="h-[2.5rem] w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3rem] md:w-[4rem]" />
+      <SiPython className="h-[2.5rem] w-[2.5rem]  md:mt-0 mt-3 hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <SiSupabase className="h-[2.5rem] w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.3rem] md:w-[4rem]" />
+      <SiSupabase className="h-[2.5rem] w-[2.5rem]  md:mt-0 mt-3 hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.3rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <SiBrave className="h-[2.5rem] w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.3rem] md:w-[4rem]" />
+      <SiBrave className="h-[2.5rem] w-[2.5rem] md:mt-0 mt-3 hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.3rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <SiGithub className="h-[2.3rem] w-[2.3rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.3rem] md:w-[4rem]" />
+      <SiGithub className="h-[2.3rem] w-[2.3rem] md:mt-0 mt-3 hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.3rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <DiCss3 className="h-[2.5rem] w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500  md:h-[3.6rem] md:w-[4rem]" />
+      <DiCss3 className="h-[2.5rem] w-[2.5rem] md:mt-0 mt-3 hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500  md:h-[3.6rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <SiJupyter className="h-[2.5rem] md:mt-4 mt-0 w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.6rem] md:w-[4rem]" />
+      <SiJupyter className="h-[2.5rem] md:mt-4 mt-3 w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.6rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <DiHtml5 className="h-[2.5rem] md:mt-4 mt-0 w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.6rem] md:w-[4rem]" />
+      <DiHtml5 className="h-[2.5rem] md:mt-4 mt-3 w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.6rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <TbBrandRadixUi className="h-[2.5rem] w-[2.5rem] md:mt-4 mt-0 hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[4rem] md:w-[4rem]" />
+      <TbBrandRadixUi className="h-[2.5rem] w-[2.5rem] md:mt-4 mt-3 hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[4rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <SiGooglecolab className="h-[2.5rem] md:mt-4 mt-0 w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.5rem] md:w-[4rem]" />
+      <SiGooglecolab className="h-[2.5rem] md:mt-4 mt-3 w-[2.5rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.5rem] md:w-[4rem]" />
     </span>
     <span className="flex flex-row items-center">
-      <SiVisualstudiocode className="h-[2.2rem] md:mt-4 mt-0 w-[2.2rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.3rem] md:w-[4rem]" />
+      <SiVisualstudiocode className="h-[2.2rem] md:mt-4 mt-3 w-[2.2rem] hover:-translate-y-1 duration-300 dark:hover:text-teal-500  hover:text-purple-500 md:h-[3.3rem] md:w-[4rem]" />
     </span>
   </div>
 );

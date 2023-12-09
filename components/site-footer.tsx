@@ -1,3 +1,4 @@
+"use client"
 import * as React from "react";
 import Link from "next/link";
 import { ModeToggle } from "@/components/themeToggler";
@@ -40,7 +41,7 @@ export default function SiteFooter({
           </div>
 
           {isHydrated && <ModeToggle />}
-          <div className="poppins dark:text-zinc-300 text-zinc-900">
+          <div className="poppins dark:text-zinc-300 md:mb-0 mb-8 text-zinc-900">
             &copy; {new Date().getFullYear()} Antony Jude Shaman.
           </div>
         </div>

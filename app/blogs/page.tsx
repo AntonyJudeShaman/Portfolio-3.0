@@ -7,6 +7,7 @@ import BlogHead from "@/components/blog-head";
 import NavMain from "@/components/nav";
 import styles from "@/app/page.module.css";
 import { Gradient } from "@/components/gradient";
+import SiteFooter from "@/components/site-footer";
 
 function BlogCard(blog: Blog) {
   const Content = getMDXComponent(blog.body.code);
@@ -46,8 +47,10 @@ export default function Home() {
         </div>
         <BlogHead />
       </div>
-      <div className="grid md:grid-cols-2 grid-cols-1 max-w-7xl mx-auto gap-6">
-        
+      <div className="grid md:grid-cols-2 grid-cols-1 max-w-7xl mx-auto gap-6"></div>
+
+      <div className="md:-ml-12">
+        <SiteFooter />
       </div>
     </div>
   );
