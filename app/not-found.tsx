@@ -50,14 +50,14 @@ export default function NotFound() {
             height={700}
             width={700}
             className="pl-10 md:block mt-6 mx-auto hidden rounded-full overflow-hidden"
-            alt="my picture"
+            alt="wizard"
           />
           <Image
             src={me}
             height={500}
             width={500}
             className="mx-auto p-6 md:hidden block pt-12 overflow-hidden"
-            alt="my picture"
+            alt="wizard"
           />
         </div>
       </div>
