@@ -167,7 +167,7 @@ export default function ProjectPage() {
       <div className="flex flex-col md:-mt-0 z-30 mt-0 -ml-4 md:ml-6 max-w-screen">
         <NavMain />
       </div>
-      <div className="" style={{zIndex:-99}}>
+      <div className="" style={{ zIndex: -99 }}>
         <Gradient2 className={styles.backgroundGradient2} conic />
         <Gradient3 className={styles.backgroundGradient3} conic />
         <Gradient4 className={styles.backgroundGradient4} conic />
@@ -196,6 +196,7 @@ export default function ProjectPage() {
                   ))}
                 </>
               ) : (
+                // my featured project is a private repo and cannot make it public, so i used hardcoded values
                 featured.map((project) => (
                   <Card key={project.name}>
                     <Link href="https://www.bindhomes.com/" target="_blank">
@@ -231,16 +232,18 @@ export default function ProjectPage() {
                         </div>
 
                         <p className="mt-4 leading-8 dmsans duration-1000 text-zinc-600 group-hover:text-zinc-700 dark:text-zinc-400 dark:group-hover:text-zinc-300">
-                          Crafted a sleek website with a dark-themed UI using
-                          Nextjs and Tailwind CSS, featuring secure admin login
-                          for project management. The Projects page boasts
-                          scrollable cards for elegant project display, while
-                          the Contact page includes a business description and a
-                          functional contact form. A seamless blend of design
-                          and functionality for efficient project management and
-                          client interaction.
+                          {/* {featured.description} */}
+                          Crafted a sleek website with a
+                          dark-themed UI using Nextjs and Tailwind CSS,
+                          featuring secure admin login for project management.
+                          The Projects page boasts scrollable cards for elegant
+                          project display, while the Contact page includes a
+                          business description and a functional contact form. A
+                          seamless blend of design and functionality for
+                          efficient project management and client interaction.
                         </p>
                         <p className="relative z-30 mt-6 flex flex-wrap text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {/* {featured?.topics?.map((topic, index) => ( */}
                           {projectData?.project?.topics?.map((topic, index) => (
                             <span
                               key={index}
@@ -256,6 +259,7 @@ export default function ProjectPage() {
                               {topic}
                             </span>
                           ))}
+              {/* ))} */}
                         </p>
                       </article>
                     </Link>

@@ -9,6 +9,7 @@ import ProjectPage from "@/components/projects-page";
 function About() {
   return (
     <div className="mx-auto z-30">
+      <title>Projects | Antony Jude Shaman</title>
       <ProjectPage />
       <div className="md:-ml-12">
         <SiteFooter />

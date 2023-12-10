@@ -59,6 +59,9 @@ dependencies:
   framer-motion:
     specifier: ^10.16.12
     version: 10.16.12(react-dom@18.2.0)(react@18.2.0)
+  gsap:
+    specifier: ^3.12.3
+    version: 3.12.3
   lucide-react:
     specifier: ^0.294.0
     version: 0.294.0(react@18.2.0)
@@ -3614,6 +3617,10 @@ packages:
       kind-of: 6.0.3
       section-matter: 1.0.0
       strip-bom-string: 1.0.0
+    dev: false
+
+  /gsap@3.12.3:
+    resolution: {integrity: sha512-TySXTE+ABiAVa61W+h5wv2p5GkJT1Uj//4nWpK8EjmhcDqwH++35IvtbQlVVFj+rdcJdFCdCt0SKgb+SwdPq/A==}
     dev: false
 
   /has-flag@3.0.0:

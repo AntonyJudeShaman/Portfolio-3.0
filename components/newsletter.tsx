@@ -5,12 +5,17 @@ import Head from "next/head";
 import { Card } from "./cardeffect";
 import { Button } from "./ui/button";
 import { Icons } from "./icons";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import { Input2 } from "./ui/input2";
 import { Gradient4 } from "./gradient";
 import styles from "@/app/page.module.css";
 
 export default function NewsLetter() {
+
+  function handleSubmit() {
+    window.open('https://buttondown.email/antonyjudeshaman', 'popupwindow');
+}
+
   return (
     <div className="md:mx-auto grid md:ml-12 ml-0 md:grid-cols-2 max-w-8xl grid-cols-1 gap-10">
       <div className="md:mt-[7rem] mt-[3rem] mx-auto">
@@ -25,9 +30,13 @@ export default function NewsLetter() {
             delivered straight to your inbox.
           </p>
           <Link href="/blogs" className="group">
-            <Button className="text-md poppins" size="lg">
+            <Button
+              className="text-md poppins duration-100 hover:bg-white hover:text-black dark:hover:invert border border-black "
+              size="lg"
+            >
               Explore Articles{" "}
-              <ArrowRight className="group-hover:translate-x-1 ml-2 duration-300" />
+              <ArrowRight className="group-hover:opacity-0 ml-2 duration-500" />
+              <ChevronRight className="group-hover:opacity-100 delay-100 opacity-0 -ml-4 duration-500" />
             </Button>
           </Link>
         </div>
@@ -36,16 +45,10 @@ export default function NewsLetter() {
         <Gradient4 className={styles.logoGradient4} conic />
         <Card>
           <form
-            action="https://buttondown.email/api/emails/embed-subscribe/antonyjudeshaman"
             method="post"
             target="popupwindow"
-            onSubmit={(e) => {
-              e.preventDefault();
-              window.open(
-                "https://buttondown.email/antonyjudeshaman",
-                "popupwindow"
-              );
-            }}
+            onSubmit={handleSubmit}
+            action="https://buttondown.email/api/emails/embed-subscribe/antonyjudeshaman"
             className="rounded-2xl md:p-8 p-5 embeddable-buttondown-form "
           >
             <h2 className="flex text-3xl items-center font-display text-zinc-900 dark:text-zinc-100">

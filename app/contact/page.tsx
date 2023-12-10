@@ -9,6 +9,7 @@ function ContactPage() {
   return (
     <>
       <div className="2xl:mx-auto">
+      <title>Contact | Antony Jude Shaman</title>
         <div className="pl-0 md:pl-6 overflow-x-hidden">
           <div className=" max-w-screen overflow-x-hidden">
             <Gradient className={styles.backgroundGradient} conic />

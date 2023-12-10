@@ -42,7 +42,7 @@ export default function SiteFooter({
           </div>
 
           {isHydrated && <ModeToggle />}
-          <div className="poppins dark:text-zinc-300 md:mb-0 mb-8 text-zinc-900">
+          <div className="poppins dark:text-zinc-300 p-2 text-zinc-900">
             &copy; {new Date().getFullYear()} Antony Jude Shaman.
           </div>
         </div>
