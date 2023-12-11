@@ -2,11 +2,13 @@ import Image from "next/image";
 import React from "react";
 import coverImage from "@/public/circles.svg";
 import NavMain from "./nav";
-import myLogo from "@/public/me.png";
+import Link from "next/link";
 import { SocialMediaIcons } from "@/components/social-icons";
 import styles from "@/app/page.module.css";
 import { Gradient } from "./gradient";
 import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
+import { Eye } from "lucide-react";
 
 function MainHead() {
   return (
@@ -35,7 +37,9 @@ function MainHead() {
             I am currently a final year undergraduate student
           </p>
           <SocialMediaIcons />
-          <Gradient className={styles.logoGradient2} conic />
+          <Link href="/resume.pdf" className="mt-8">
+          <Button className="glow-button border text-md poppins duration-300 hover:bg-white hover:text-black dark:hover:invert" size="lg">View Resume<Eye className="ml-2"/></Button>
+          </Link><Gradient className={styles.logoGradient2} conic />
         </div>
 
         <div className="flex justify-center md:block hidden lg:mt-12 md:mt-28 ">

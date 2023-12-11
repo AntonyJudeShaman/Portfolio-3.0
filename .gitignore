@@ -15,5 +15,6 @@ yarn-error.log
 # mac
 .DS_Store
 
+#environment variables
 .env
 .env.local

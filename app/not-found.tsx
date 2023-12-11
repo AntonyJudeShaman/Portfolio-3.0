@@ -7,6 +7,9 @@ import me from "@/public/images/wizard.png";
 import Image from "next/image";
 import NavMain from "@/components/nav";
 import SiteFooter from "@/components/site-footer";
+import Particles from "@/components/particles";
+import styles from "@/app/page.module.css"
+import { Gradient2 } from "@/components/gradient";
 
 export default function NotFound() {
   return (
@@ -19,11 +22,18 @@ export default function NotFound() {
           <NavMain />
         </div>
       </div>
+      <div className="max-h-screen max-w-screen">
+        <Gradient2 className={styles.backgroundGradient} conic />
+      </div>
       <div
         className="mt-[3rem] overflow-hidden mx-auto items-center justify-center max-w-5xl"
         style={{ overflowY: "hidden" }}
       >
         <div className="mx-auto items-center justify-center grid grid-cols-1 lg:grid-cols-2 max-w-5xl">
+          <Particles
+            className="absolute inset-0 -z-10 animate-fade-in"
+            quantity={50}
+          />
           <div className="md:text-2xl mx-auto md:p-0 p-6 text-md md:leading-10  dark:text-white/70 text-black/70 leading-6 max-w-2xl md:max-w-3xl lg:max-w-3xl">
             <div className="max-w-full text-lg md:text-left md:text-2xl md:leading-10 leading-6 dmsans mx-auto">
               <div className="max-w-xl p-6 rounded-md">
