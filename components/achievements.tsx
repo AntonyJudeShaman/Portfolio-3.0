@@ -2,9 +2,9 @@
 import React from "react";
 import { course as coursesData } from "config/home";
 import Link from "next/link";
-import styles from "@/app/page.module.css"
+import styles from "@/app/page.module.css";
 import { Button } from "./ui/button";
-import { Gradient2, Gradient4} from "./gradient";
+import { Gradient2, Gradient4 } from "./gradient";
 
 const Achievements = () => {
   return (
@@ -32,6 +32,7 @@ const Achievements = () => {
                   </h3>
                   <p className="p-3 poppins text-sm">May 1, 2023</p>
                   <Link
+                    target="_blank"
                     className=" hover:underline z-20 p-3"
                     href="https://www.coursera.org/account/accomplishments/specialization/certificate/SLR5TLU6JQQN"
                   >
@@ -40,8 +41,8 @@ const Achievements = () => {
                     </Button>{" "}
                   </Link>
                   <div className=" ">
-                  <Gradient2 className={styles.logoGradient} conic/>
-                </div>
+                    <Gradient2 className={styles.logoGradient} conic />
+                  </div>
                 </div>
               </div>
               <div className="card">
@@ -51,6 +52,7 @@ const Achievements = () => {
                   </h3>
                   <p className="p-3 poppins text-sm">August 14, 2022</p>
                   <Link
+                    target="_blank"
                     className=" hover:underline z-20 p-3"
                     href="https://www.coursera.org/account/accomplishments/specialization/certificate/3UF4U2DH8FG2"
                   >
@@ -68,6 +70,7 @@ const Achievements = () => {
                   </h3>
                   <p className="p-3 poppins text-sm">November 15, 2022</p>
                   <Link
+                    target="_blank"
                     className=" hover:underline z-40 p-3"
                     href="https://www.coursera.org/account/accomplishments/certificate/M8FKN4C4VY8Z"
                   >
@@ -76,8 +79,8 @@ const Achievements = () => {
                     </Button>{" "}
                   </Link>
                   <div className=" ">
-                  <Gradient2 className={styles.logoGradient} conic/>
-                </div>
+                    <Gradient2 className={styles.logoGradient} conic />
+                  </div>
                 </div>
               </div>
               <div className="card">
@@ -88,13 +91,15 @@ const Achievements = () => {
                   </h3>
                   <p className="p-3 poppins text-sm">November 15, 2022</p>
                   <Link
+                    target="_blank"
                     className=" hover:underline z-40 p-3"
                     href="https://www.coursera.org/account/accomplishments/certificate/KJXALZXRTNML"
                   >
                     <Button className="dark:bg-white bg-black text-white dark:text-black">
                       View Info
                     </Button>{" "}
-                  </Link></div>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -109,6 +114,7 @@ const Achievements = () => {
                 </h3>
                 <p className="pl-3 poppins text-sm">July 2, 2023</p>
                 <Link
+                  target="_blank"
                   className=" hover:underline z-20 p-3"
                   href="https://www.coursera.org/account/accomplishments/specialization/certificate/SLR5TLU6JQQN"
                 >
@@ -116,8 +122,8 @@ const Achievements = () => {
                     View Info
                   </Button>{" "}
                 </Link>
-                  <div className=" ">
-                  <Gradient2 className={styles.logoGradient} conic/>
+                <div className=" ">
+                  <Gradient2 className={styles.logoGradient} conic />
                 </div>
               </div>
             </div>
@@ -133,6 +139,7 @@ const Achievements = () => {
                   <li>Front end development - Top 5%</li>
                 </ul>
                 <Link
+                  target="_blank"
                   className=" hover:underline z-20 p-3"
                   href="https://www.linkedin.com/in/antony-jude-shaman/"
                 >
@@ -140,8 +147,8 @@ const Achievements = () => {
                     View Info
                   </Button>{" "}
                 </Link>
-                  <div className="">
-                  <Gradient2 className={styles.logoGradient} conic/>
+                <div className="">
+                  <Gradient2 className={styles.logoGradient} conic />
                 </div>
               </div>
             </div>
@@ -153,6 +160,7 @@ const Achievements = () => {
                   Applied Data Science Course
                 </h3>
                 <Link
+                  target="_blank"
                   className=" hover:underline z-20 p-3"
                   href="https://www.naanmudhalvan.tn.gov.in/"
                 >
@@ -170,6 +178,7 @@ const Achievements = () => {
                 </h3>
                 <p className="pl-3 poppins text-sm">July 2, 2023</p>
                 <Link
+                  target="_blank"
                   className=" hover:underline z-20 p-3"
                   href="https://drive.google.com/file/d/14oEYD38hpGzmHdIln0GuGJiYQeBXHqt0/view?usp=sharing"
                 >
@@ -177,8 +186,8 @@ const Achievements = () => {
                     View Info
                   </Button>{" "}
                 </Link>
-                  <div className=" ">
-                  <Gradient2 className={styles.logoGradient} conic/>
+                <div className=" ">
+                  <Gradient2 className={styles.logoGradient} conic />
                 </div>
               </div>
             </div>
@@ -190,6 +199,7 @@ const Achievements = () => {
                 </h3>
                 <p className="pl-3 poppins text-sm">July 2, 2023</p>
                 <Link
+                  target="_blank"
                   className=" hover:underline z-20 p-3"
                   href="https://www.firstnaukri.com/contests/codequezt-contest-sharp-3-the-ultimate-coding-challenge-coding-contest-firstnaukri-event-64a40888d2952b7497b32705"
                 >
