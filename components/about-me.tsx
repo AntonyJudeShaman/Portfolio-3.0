@@ -12,7 +12,7 @@ function AboutMe() {
       >
         About me
       </p>
-      <div className="leading-6 text-lg dark:text-white/70 text-black/70 md:leading-10 lg:text-center md:text-center xl:text-left text-left mx-auto text-md md:text-xl max-w-2xl md:max-w-3xl p-6 md:p-0">
+      <div className="leading-6 text-lg dark:text-slate-400 text-slate-600 md:leading-10 lg:text-center md:text-center xl:text-left text-left mx-auto text-md md:text-xl max-w-2xl md:max-w-3xl p-6 md:p-0">
         <p className="text-lg md:text-left text-justify md:text-2xl md:leading-10 leading-6 dmsans">
           I am a
           <span className="dark:text-teal-300 text-purple-500 poppins">

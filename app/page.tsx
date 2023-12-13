@@ -8,6 +8,7 @@ import AboutMe from "@/components/about-me";
 import Tools from "@/components/tools";
 import Skills from "@/components/skills";
 import SiteFooter from "@/components/site-footer"
+import Achievements from "@/components/achievements";
 
 export default function Page(): JSX.Element {
   return (
@@ -24,6 +25,7 @@ export default function Page(): JSX.Element {
       <AboutMe />
       <Tools />
       <Skills />
+      <Achievements/>
       <NewsLetter/>
       <SiteFooter/>
     </>

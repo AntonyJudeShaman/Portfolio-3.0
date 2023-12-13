@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import coverImage from "@/public/images/home.png";
-import NavMain from "./nav";
+import NavMain from "./components/nav";
 
 function AboutHead() {
   return (

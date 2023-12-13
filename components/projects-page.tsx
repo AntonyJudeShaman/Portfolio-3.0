@@ -9,7 +9,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ExternalLink as L } from "lucide-react";
 import { Gradient2, Gradient3, Gradient4 } from "@/components/gradient";
 import styles from "@/app/page.module.css";
-import SiteFooter from "@/components/site-footer";
 
 const octokit = new Octokit({
   auth: process.env.NEXT_PUBLIC_GITHUB_TOKEN,

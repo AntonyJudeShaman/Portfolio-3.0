@@ -307,7 +307,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 1);
+  background: rgb(255, 255, 255);
   border-radius: 12px;
 }
 
@@ -410,4 +410,176 @@
   to {
     transform: translateX(100%);
   }
+}
+
+
+
+
+.card {
+  position: relative;
+  max-width: 400px;
+}
+.card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid rgb(3, 196, 167);
+}
+
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+@media only screen and (max-width: 400px) {
+  .card:nth-child(odd)::before {
+    top: -5px;
+    bottom: -5px;
+  }
+}
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+.card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+.card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card2{
+  position: relative;
+  max-width: 400px;
+}
+.card2:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card2:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+.card2::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid rgb(176, 30, 209);
+}
+
+.card2:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+@media only screen and (max-width: 400px) {
+  .card2:nth-child(odd)::before {
+    top: -5px;
+    bottom: -5px;
+  }
+}
+.card2:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.card2:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+.card2:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+.card2:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.title {
+  color: rgb(3, 196, 167);
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid rgb(3, 196, 167);
+}
+
+.title2 {
+  color: rgb(176, 30, 209);
+  position: relative;
+}
+
+.title2::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid rgb(176, 30, 209);
+}
+
+.card:nth-child(even) > .info > .title {
+  text-align: left;
+}
+
+.card:nth-child(odd) > .info > .title::before {
+  left: -45px;
+}
+
+.card:nth-child(even) > .info > .title::before {
+  right: -45px;
+}
+
+
+.card2:nth-child(even) > .info > .title2 {
+  text-align: left;
+}
+
+.card2:nth-child(odd) > .info > .title2::before {
+  left: -45px;
+}
+
+.card2:nth-child(even) > .info > .title2::before {
+  right: -45px;
 }

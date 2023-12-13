@@ -1,5 +1,5 @@
 import React from "react";
-import AboutHead from "@/components/about-head";
+import AboutHead from "about-head";
 import SiteFooter from "@/components/site-footer";
 import styles from "@/app/page.module.css";
 import { Gradient2 } from "@/components/gradient";
