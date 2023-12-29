@@ -34,18 +34,29 @@ export function MobileNav({ items, children }: MobileNavProps) {
             <ModeToggle />
           </div>
           {items.map((item, index) => (
-            <Link
-              key={index}
-              aria-label="navbar items"
-              href={item.disabled ? "#" : item.href}
-              className={cn(
-                "flex w-full items-end z-80 text-5xl mb-5 rounded-md p-2 dmsans hover:underline",
-                item.disabled && "cursor-not-allowed opacity-60"
-              )}
-            >
-              {item.title}
-            </Link>
-          ))}
+            <>
+              <Link
+                key={index}
+                aria-label="navbar items"
+                href={item.disabled ? "#" : item.href}
+                className={cn(
+                  "flex w-full items-end z-80 text-5xl mb-5 rounded-md p-2 dmsans hover:underline",
+                  item.disabled && "cursor-not-allowed opacity-60"
+                )}
+              >
+                {item.title}
+              </Link>
+            </>
+          ))}{" "}
+          <Link
+            aria-label="navbar items"
+            href="https://blogs.antonyjudeshaman.vercel.app"
+            className={cn(
+              "flex w-full items-end z-80 text-5xl mb-5 rounded-md p-2 dmsans hover:underline"
+            )}
+          >
+            Blogs
+          </Link>
         </nav>
         {children}
       </div>
