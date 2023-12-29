@@ -15,7 +15,7 @@ function MainHead() {
     <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-4 md:ml-6 min-h-screen max-w-screen">
       <NavMain />
       <div className="flex flex-row">
-        <div className="flex md:pl-5 ml-10 mt-36 md:mt-28 lg:mt-32 md:ml-0 flex-col md:m-0 m-6 text-left"  style={{ zIndex: 10 }}>
+        <div className="flex md:pl-5 ml-10 mt-36 md:mt-28 lg:mt-20 md:ml-0 flex-col md:m-0 m-6 text-left"  style={{ zIndex: 10 }}>
           <p
             className="md:text-4xl sm:text-4xl dark:text-white/90 text-black flex flex-col text-4xl lg:text-5xl 2xl:text-6xl md:mt-20 lg:mt-12 xl:text-6xl font-display 2xl:max-w-6xl xl:max-w-3xl max-w-md md:max-w-5xl lg:max-w-3xl text-left mb-"
             aria-label="Hello! I am Antony Jude Shaman"
@@ -31,7 +31,7 @@ function MainHead() {
             Antony Jude Shaman{" "}
           </p>
           <p
-            className="home-title max-w-screen poppins mr-5 md:mr-0 font-pops text-xl md:text-lg mt-5 2xl:text-xl xl:text-xl  mb-4  text-left"
+            className="home-title max-w-screen poppins mr-5 md:mr-0 font-pops text-lg md:text-lg mt-5 2xl:text-xl xl:text-xl  mb-4  text-left"
             aria-label="I am currently a final year undergraduate student"
           >
             I am currently a final year undergraduate student

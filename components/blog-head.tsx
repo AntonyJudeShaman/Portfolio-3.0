@@ -87,18 +87,19 @@ function BlogHead() {
                     dateTime=""
                     className="block mb-4 mt-32 sm:mt-10 md:mt-0 font-bold font-pops text-sm"
                   >
-                    October 21, 2023
+                    December 8, 2023
                   </time>
-                  <h2 className="text-3xl font-bold mb-4">
+                  <h2 className="text-2xl font-bold mb-4">
                     <p className="dark:text-white dark:hover:text-white/90 text-black hover:text-black/90 font-display">
-                      Lorem ipsum dolor sit .
+                      REST APIs with Next.js App Router and ORM
                     </p>
                   </h2>
-                  <div className="text-md overflow-hidden poppins font-sans">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Iure eum eaque laboriosam deleniti dolores quidem alias
-                    veniam id, odit optio. Suscipit quidem id maxime officia
-                    esse quod nostrum perspiciatis similique.
+                  <div className="text-sm overflow-hidden poppins font-sans">
+                    Exploring the vast world of web development opens doors to
+                    exciting technologies and platforms that can shape your
+                    digital universe. In this blog, we'll delve into a
+                    captivating adventure with Next.js, Vercel, Firebase, and
+                    Git. These tools...
                   </div>
                   <p className="flex flex-row max-w-[9rem] rounded text-sky-800 hover:text-sky-900 dark:text-sky-500 dark:hover:text-sky-700 mt-5 hover:bg-slate-auto duration-300 text-xl item font-display">
                     <ChevronRight className=" group-hover:translate-x-[2px] duration-300" />{" "}
@@ -127,7 +128,7 @@ function BlogHead() {
               style={{ zIndex: -1 }}
             />
           </div>
-            <div className="border-t border-gray-500 my-4"></div>
+          <div className="border-t border-gray-500 my-4"></div>
           <div className="grid md:grid-cols-1 mt-6 grid-cols-1 md:ml-4 xl:max-w-2xl lg:max-w-xl md:max-w-[50rem] mx-auto gap-6">
             {blogs.map((blog, idx) => (
               <BlogCard key={idx} {...blog} />
@@ -147,18 +148,19 @@ function BlogHead() {
                     dateTime=""
                     className="block mb-4 font-bold font-pops text-sm"
                   >
-                    October 21, 2023
+                    December 8, 2023
                   </time>
                   <h2 className="text-3xl font-bold mb-4 z-20">
                     <p className="dark:text-white  text-black hover:text-black/90 font-display">
-                      Lorem ipsum dolor sit .
+                      REST APIs with Next.js App Router and ORM
                     </p>
                   </h2>
                   <div className="text-md overflow-hidden poppins z-30">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Iure eum eaque laboriosam deleniti dolores quidem alias
-                    veniam id, odit optio. Suscipit quidem id maxime officia
-                    esse quod nostrum perspiciatis similique.
+                    Exploring the vast world of web development opens doors to
+                    exciting technologies and platforms that can shape your
+                    digital universe. In this blog, we'll delve into a
+                    captivating adventure with Next.js, Vercel, Firebase, and
+                    Git. These tools...
                   </div>
                   <p className="flex flex-row max-w-[9rem]  rounded text-black hover:text-black/70 dark:text-sky-500 dark:hover:text-sky-700 mt-5 hover:bg-slate-auto duration-300 text-xl items-center font-display">
                     <ChevronRight className=" group-hover:translate-x-[2px] duration-300" />{" "}

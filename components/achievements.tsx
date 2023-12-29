@@ -89,7 +89,7 @@ const Achievements = () => {
                   <h3 className="title p-3 poppins">
                     Deep Learning with pyTorch: Siamese network
                   </h3>
-                  <p className="p-3 poppins text-sm">November 15, 2022</p>
+                  <p className="p-3 poppins text-sm">March 25, 2023</p>
                   <Link
                     target="_blank"
                     className=" hover:underline z-40 p-3"
@@ -176,7 +176,7 @@ const Achievements = () => {
                 <h3 className="title2 p-3 poppins">
                   Flipkart GRiD 5.0 - Software Development Track
                 </h3>
-                <p className="pl-3 poppins text-sm">July 2, 2023</p>
+                <p className="pl-3 poppins text-sm">July 25, 2023</p>
                 <Link
                   target="_blank"
                   className=" hover:underline z-20 p-3"
@@ -197,7 +197,7 @@ const Achievements = () => {
                 <h3 className="title2 p-3 poppins">
                   Secured 9th place in FirstNaukri's CodeQuest
                 </h3>
-                <p className="pl-3 poppins text-sm">July 2, 2023</p>
+                <p className="pl-3 poppins text-sm">August 19, 2023</p>
                 <Link
                   target="_blank"
                   className=" hover:underline z-20 p-3"

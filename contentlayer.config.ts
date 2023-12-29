@@ -5,6 +5,11 @@ const Blog = defineDocumentType(() => ({
   filePathPattern: `**/*.mdx`,
   contentType: 'mdx',
   fields: {
+    id: {
+      type: 'number',
+      description: 'The title of the Blog',
+      required: true,
+    },
     title: {
       type: 'string',
       description: 'The title of the Blog',
@@ -18,6 +23,11 @@ const Blog = defineDocumentType(() => ({
     meta: {
       type: 'string',
       description: 'The meta data of the Blog',
+      required: true,
+    },
+    featured: {
+      type: 'string',
+      description: 'featured blog post',
       required: true,
     },
   },
