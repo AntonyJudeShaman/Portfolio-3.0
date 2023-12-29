@@ -39,6 +39,18 @@ export default function SiteFooter({
                   </Link>
                 </>
               ))}
+            <Link
+              href="https://blogs.antonyjudeshaman.vercel.app"
+              target="_blank"
+              className={cn(
+                "group relative flex flex-col justify-center text-right text-lg items-center overflow-hidden poppins dark:text-zinc-300 text-zinc-900 md:inline-block rounded-md p-2 font-medium",
+
+                "relative overflow-hidden after:relative after:flex after:items-center after:content-'' after:w-0 after:h-[2px] dark:after:bg-purple-400 after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full",
+                "after:mt-2"
+              )}
+            >
+              Blogs
+            </Link>
           </div>
 
           {isHydrated && <ModeToggle />}
