@@ -1,6 +1,5 @@
 import { NavConfig } from "types";
 import { DiJira, DiGoogleCloudPlatform } from "react-icons/di";
-import { SiCoursera } from "react-icons/si";
 
 // NavConfig.ts
 export const navConfig: NavConfig = {

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Tools() {
   return (
-    <div className="md:mt-[15rem] mt-[5rem] mx-auto items-center justify-center max-w-7xl">
+    <div className="md:mt-[15rem] -mt-[2rem] mx-auto items-center justify-center max-w-7xl">
       <div className="mx-auto items-center justify-center grid grid-cols-1 lg:grid-cols-2 max-w-6xl">
         <Gradient className={styles.logoGradient2} conic />
         <div className="md:text-2xl mx-auto md:p-0 p-6 text-md md:leading-10  dark:text-slate-400 text-slate-600 leading-6 max-w-2xl md:max-w-3xl lg:max-w-xl">

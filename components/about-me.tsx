@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import styles from "@/app/page.module.css";
-import { Gradient4, Gradient3 } from "./gradient";
+import { Gradient3 } from "./gradient";
 
 function AboutMe() {
   return (
-    <div className="md:-ml-10 md:pt-20 pt-16 text-justify items-center flex xl:flex-row flex-col mb-4 mx-auto">
+    <div className="md:-ml-10 md:pt-20 pt-16 text-justify items-cen flex xl:flex-row flex-col mb-4 mx-auto">
       <p
-        className="md:text-6xl text-center mx-auto mb-6 bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400 text-transparent sm:text-6xl text-6xl lg:text-6xl 2xl:text-7xl md:mt-20 lg:mt-12 xl:text-7xl font-display 2xl:max-w-4xl xl:max-w-4xl lg:max-w-3xl"
+        className="md:text-6xl md:text-center text-left justify-start flex md:mx-auto mb-6 bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400 text-transparent sm:text-6xl text-6xl lg:text-6xl 2xl:text-7xl md:mt-20 lg:mt-12 xl:text-7xl font-display 2xl:max-w-4xl xl:max-w-4xl lg:max-w-3xl"
         aria-label="About me"
       >
         About me
