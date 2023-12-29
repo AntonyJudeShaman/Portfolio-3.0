@@ -13,17 +13,9 @@ export const navConfig: NavConfig = {
       title: "Projects",
       href: "/projects",
     },
-    // {
-    //   title: "About",
-    //   href: "/about",
-    // },
     {
       title: "Contact",
       href: "/contact",
-    },
-    {
-      title: "Blogs",
-      href: "/blogs",
     },
   ],
 };
@@ -58,10 +50,6 @@ export const HomePage: NavConfig = {
     {
       title: "Contact",
       href: "/contact",
-    },
-    {
-      title: "Blogs",
-      href: "/blogs",
     },
   ],
 };
