@@ -37,7 +37,7 @@ const Achievements = () => {
                     href="https://www.coursera.org/account/accomplishments/specialization/certificate/SLR5TLU6JQQN"
                   >
                     <Button className="dark:bg-white bg-black text-white dark:text-black">
-                      View Info
+                      View
                     </Button>{" "}
                   </Link>
                   <div className=" ">
@@ -57,7 +57,7 @@ const Achievements = () => {
                     href="https://www.coursera.org/account/accomplishments/specialization/certificate/3UF4U2DH8FG2"
                   >
                     <Button className="dark:bg-white bg-black text-white dark:text-black">
-                      View Info
+                      View
                     </Button>{" "}
                   </Link>
                 </div>
@@ -75,7 +75,7 @@ const Achievements = () => {
                     href="https://www.coursera.org/account/accomplishments/certificate/M8FKN4C4VY8Z"
                   >
                     <Button className="dark:bg-white bg-black text-white dark:text-black">
-                      View Info
+                      View
                     </Button>{" "}
                   </Link>
                   <div className=" ">
@@ -96,7 +96,7 @@ const Achievements = () => {
                     href="https://www.coursera.org/account/accomplishments/certificate/KJXALZXRTNML"
                   >
                     <Button className="dark:bg-white bg-black text-white dark:text-black">
-                      View Info
+                      View
                     </Button>{" "}
                   </Link>
                 </div>
@@ -119,7 +119,7 @@ const Achievements = () => {
                   href="https://www.coursera.org/account/accomplishments/specialization/certificate/SLR5TLU6JQQN"
                 >
                   <Button className="dark:bg-white bg-black text-white dark:text-black">
-                    View Info
+                    View
                   </Button>{" "}
                 </Link>
                 <div className=" ">
@@ -144,7 +144,7 @@ const Achievements = () => {
                   href="https://www.linkedin.com/in/antony-jude-shaman/"
                 >
                   <Button className="dark:bg-white bg-black text-white dark:text-black">
-                    View Info
+                    View
                   </Button>{" "}
                 </Link>
                 <div className="">
@@ -165,7 +165,7 @@ const Achievements = () => {
                   href="https://www.naanmudhalvan.tn.gov.in/"
                 >
                   <Button className="dark:bg-white bg-black text-white dark:text-black">
-                    View Info
+                    View
                   </Button>{" "}
                 </Link>
               </div>
@@ -183,7 +183,7 @@ const Achievements = () => {
                   href="https://drive.google.com/file/d/14oEYD38hpGzmHdIln0GuGJiYQeBXHqt0/view?usp=sharing"
                 >
                   <Button className="dark:bg-white bg-black text-white dark:text-black">
-                    View Info
+                    View
                   </Button>{" "}
                 </Link>
                 <div className=" ">
@@ -204,7 +204,7 @@ const Achievements = () => {
                   href="https://www.firstnaukri.com/contests/codequezt-contest-sharp-3-the-ultimate-coding-challenge-coding-contest-firstnaukri-event-64a40888d2952b7497b32705"
                 >
                   <Button className="dark:bg-white bg-black text-white dark:text-black">
-                    View Info
+                    View
                   </Button>{" "}
                 </Link>
               </div>
