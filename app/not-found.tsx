@@ -30,10 +30,10 @@ export default function NotFound() {
         style={{ overflowY: "hidden" }}
       >
         <div className="mx-auto items-center justify-center grid grid-cols-1 lg:grid-cols-2 max-w-5xl">
-          <Particles
+          {/* <Particles
             className="absolute inset-0 -z-10 animate-fade-in"
-            quantity={50}
-          />
+            quantity={20}
+          /> */}
           <div className="md:text-2xl mx-auto md:p-0 p-6 text-md md:leading-10  dark:text-white/70 text-black/70 leading-6 max-w-2xl md:max-w-3xl lg:max-w-3xl">
             <div className="max-w-full text-lg md:text-left md:text-2xl md:leading-10 leading-6 dmsans mx-auto">
               <div className="max-w-xl p-6 rounded-md">

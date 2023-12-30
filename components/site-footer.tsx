@@ -16,7 +16,7 @@ export default function SiteFooter({
 
   return (
     <div className="max-w-screen">
-      <footer className="md:py-8 bg-gradient-to-rb from-transparent to-black/20">
+      <footer className=" bg-gradient-to-rb from-transparent to-black/20">
         <hr className="my-8 border-zinc-600 mx-auto justify-between md:max-w-[85rem] max-w-2xl lg:my-8" />
 
         <div className="flex md:flex-row flex-col gap-y-8 justify-between items-center mx-auto text-lg md:text-md 2xl:max-w-[85rem] xl:max-w-[68rem] lg:max-w-[58rem] md:max-w-[48rem] max-w-[20rem] sm:text-center  text-gray-50">
@@ -52,9 +52,8 @@ export default function SiteFooter({
               Blogs
             </Link>
           </div>
-
-          {isHydrated && <ModeToggle />}
-          <div className="poppins dark:text-zinc-300 p-2 text-zinc-900">
+          <div className="-mt-1">{isHydrated && <ModeToggle />}</div>{" "}
+          <div className="poppins dark:text-zinc-300 -mt-3 text-zinc-900">
             &copy; {new Date().getFullYear()} Antony Jude Shaman.
           </div>
         </div>
