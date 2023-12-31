@@ -20,6 +20,46 @@ const calSans = LocalFont({
   variable: "--font-calsans",
 });
 
+export const metadata: Metadata = {
+  metadataBase: new URL("https://antonyjudeshaman.vercel.app"),
+  title: "Antony Jude Shaman",
+  description: "Portfolio website of Antony Jude Shaman",
+  openGraph: {
+    title: "Antony Jude Shaman",
+    description: "Portfolio website of Antony Jude Shaman",
+    url: "./",
+    siteName: "Antony Jude Shaman",
+    images: "https://blogs.antonyjudeshaman.vercel.app/my-banner.jpeg",
+    locale: "en_US",
+    type: "website",
+  },
+  alternates: {
+    canonical: "./",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: "Antony Jude Shaman",
+    card: "summary_large_image",
+    images: [
+      {
+        url: "https://blogs.antonyjudeshaman.vercel.app/my-banner.jpeg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
