@@ -20,11 +20,6 @@ const calSans = LocalFont({
   variable: "--font-calsans",
 });
 
-export const metadata: Metadata = {
-  title: "Antony Jude Shaman",
-  description: "Portfolio",
-};
-
 export default function RootLayout({
   children,
 }: {
