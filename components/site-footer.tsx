@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ModeToggle } from "@/components/themeToggler";
 import { navConfig } from "config/home";
 import { cn } from "@/lib/utils";
+import { TypeBot } from "./typebot";
 
 export default function SiteFooter({
   className,
@@ -58,6 +59,7 @@ export default function SiteFooter({
           </div>
         </div>
       </footer>
+      <TypeBot/>
     </div>
   );
 }
