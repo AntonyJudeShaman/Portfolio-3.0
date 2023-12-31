@@ -9,7 +9,6 @@ import Tools from "@/components/tools";
 import Skills from "@/components/skills";
 import SiteFooter from "@/components/site-footer"
 import Achievements from "@/components/achievements";
-import { TypeBot } from "@/components/typebot";
 
 export default function Page(): JSX.Element {
   return (
@@ -27,7 +26,6 @@ export default function Page(): JSX.Element {
       <Tools />
       <Skills />
       <Achievements/>
-      <TypeBot />
       <NewsLetter/>
       <SiteFooter/>
     </>
