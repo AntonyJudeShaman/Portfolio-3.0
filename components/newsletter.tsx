@@ -29,7 +29,7 @@ export default function NewsLetter() {
             expert tips. Subscribe now for your regular dose of valuable content
             delivered straight to your inbox.
           </p>
-          <Link href="/blogs" className="group">
+          <Link href="https://blogs.antonyjudeshaman.vercel.app" className="group">
             <Button
               className="text-md poppins duration-100 hover:bg-white hover:text-black dark:hover:invert border border-black "
               size="lg"

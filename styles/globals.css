@@ -13,6 +13,14 @@
   font-weight: 500;
 }
 
+a{
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+button{
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 .bubbles {
   font-family: "Rubik Bubbles";
   font-weight: 400;

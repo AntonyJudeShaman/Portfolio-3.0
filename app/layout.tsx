@@ -54,27 +54,30 @@ export default function RootLayout({
           sizes="any"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="generator" content="Site Kit by Google 1.104.0" />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://portfolio3.0-ajs.vercel.app/"
+          content="https://antonyjudeshaman.vercel.app/"
         />
         <meta property="og:title" content="Antony Jude Shaman" />
         <meta property="og:description" content="Portfolio website" />
 
         <meta
           property="og:image"
-          content="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d"
+          content="https://blogs.antonyjudeshaman.vercel.app/my-banner.jpeg"
         />
 
         <meta name="description" content="Portfolio website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Antony Jude Shaman" />
         <meta name="twitter:description" content="Portfolio website" />
+        <meta
+          name="twitter:image"
+          content="https://blogs.antonyjudeshaman.vercel.app/my-banner.jpeg"
+        />
       </Head>
       <body
-        className="md:ml-8 ml-0"
+        className="md:ml-8 ml-0 dark:selection:bg-purple-950 selection:bg-green-400"
         style={{ maxWidth: "100%", maxHeight: "100%", overflowX: "hidden" }}
       >
         <ThemeProvider
