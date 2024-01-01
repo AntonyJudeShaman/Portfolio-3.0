@@ -24,6 +24,7 @@
     "@typebot.io/js": "^0.2.31",
     "@typebot.io/nextjs": "^0.2.31",
     "@typebot.io/react": "^0.2.31",
+    "@vercel/analytics": "^1.1.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "contentlayer": "latest",
