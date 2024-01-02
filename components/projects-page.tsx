@@ -198,11 +198,11 @@ export default function ProjectPage() {
                 // my featured project is a private repo and cannot make it public, so i used hardcoded values
                 featured.map((project) => (
                   <Card key={project.name}>
-                    <Link href="https://www.bindhomes.com/" target="_blank">
+                    <Link href="https://www.bindarchitects.com/" target="_blank">
                       <article className="relative  group flex-col flex justify-center w-full h-full p-6 md:p-8">
                         <div className="flex items-center justify-between gap-2">
                           <div className="text-sm z-30 text-zinc-900 poppins dark:text-zinc-100">
-                            <time>November 8, 2023</time>
+                            <time>November 28, 2023</time>
                           </div>
 
                           <span className="dark:text-zinc-500 text-zinc-600 text-xl  flex items-center gap-1">
@@ -221,7 +221,7 @@ export default function ProjectPage() {
                           </h2>
                           {/* {project?.homepage.length > 0 && ( */}
                           <Link
-                            href="https://bindhomes.com/"
+                            href="https://bindarchitects.com/"
                             target="_blank"
                             className="hidden flex z-30 items-center justify-center hover:text-blue-400 text-blue-700 group-hover:block"
                           >
