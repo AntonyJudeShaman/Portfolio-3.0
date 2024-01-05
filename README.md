@@ -59,7 +59,6 @@ yarn run dev
 
 - 📁 **.contentlayer**: Content layer configuration and data
 - 📁 **app**: Main application code
-  - 📁 **blogs**: Blog-related components and pages
   - 📁 **contact**: Contact-related components and pages
   - 📁 **projects**: Project-related components and pages
   - 📁 **components**: Reusable components
