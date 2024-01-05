@@ -7,7 +7,7 @@ import { Article } from "@/components/article";
 import NavMain from "@/components/nav";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ExternalLink as L } from "lucide-react";
-import { Gradient2, Gradient3, Gradient4 } from "@/components/gradient";
+import { Gradient, Gradient3, Gradient4 } from "@/components/gradient";
 import styles from "@/app/page.module.css";
 
 const octokit = new Octokit({
@@ -167,7 +167,7 @@ export default function ProjectPage() {
         <NavMain />
       </div>
       <div className="" style={{ zIndex: -99 }}>
-        <Gradient2 className={styles.backgroundGradient2} conic />
+        <Gradient className={styles.backgroundGradient2} conic />
         <Gradient3 className={styles.backgroundGradient3} conic />
         <Gradient4 className={styles.backgroundGradient4} conic />
         <div className="relative pb-16 pl-0 pr-0 md:pl-6 md:pr-16">
