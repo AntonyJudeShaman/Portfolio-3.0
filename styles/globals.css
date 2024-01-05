@@ -34,7 +34,7 @@ button{
 .steel-text {
   background: linear-gradient(45deg, #ff6b6b, #ffa07a);
   background-clip: text;
-  -webkit-background-clip: text; /* For Safari */
+  -webkit-background-clip: text; 
   color: transparent;
   text-fill-color: transparent;
 }

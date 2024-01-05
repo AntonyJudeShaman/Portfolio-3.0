@@ -37,7 +37,7 @@ function MainHead() {
             I am currently a final year undergraduate student
           </p>
           <SocialMediaIcons />
-          <Link href="/resume.pdf" className="mt-8">
+          <Link href="/resume.pdf" target="_blank" className="mt-8">
           <Button className="glow-button border text-md poppins duration-300 hover:bg-white hover:text-black dark:hover:invert" size="lg">View Resume<Eye className="ml-2"/></Button>
           </Link><Gradient className={styles.logoGradient2} conic />
         </div>
