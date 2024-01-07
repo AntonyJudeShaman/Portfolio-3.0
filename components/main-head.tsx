@@ -12,19 +12,19 @@ import { Eye } from "lucide-react";
 
 function MainHead() {
   return (
-    <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-4 md:ml-6 min-h-screen max-w-screen">
+    <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-4 md:ml-6 max-h-screen max-w-screen">
       <NavMain />
-      <div className="flex flex-row">
-        <div className="flex md:pl-5 ml-10 mt-36 md:mt-28 lg:mt-20 md:ml-0 flex-col md:m-0 m-6 text-left"  style={{ zIndex: 10 }}>
+      <div className="flex flex-row 2xl:justify-center">
+        <div className="flex pl-5 2xl:mt-[4%] md:mt-[5%] mt-[8rem] 0 2xl:items-center md:ml-0 flex-col md:m-0 m-6 text-left"  style={{ zIndex: 10 }}>
           <p
-            className="md:text-4xl sm:text-4xl dark:text-white/90 text-black flex flex-col text-4xl lg:text-5xl 2xl:text-6xl md:mt-20 lg:mt-12 xl:text-6xl font-display 2xl:max-w-6xl xl:max-w-3xl max-w-md md:max-w-5xl lg:max-w-3xl text-left mb-"
+            className="md:text-4xl sm:text-4xl dark:text-white/90 text-black flex flex-col text-4xl lg:text-5xl 2xl:text-5xl  md:mt-20 lg:mt-12 xl:text-6xl font-display max-w-[80%] text-left mb-"
             aria-label="Hello! I am Antony Jude Shaman"
             style={{ zIndex: 10 }}
           >
             Hello! I'm
           </p>
           <p
-            className="md:text-6xl mt-2 sm:text-6xl dark:text-white/90 text-black about-heading flex flex-col text-6xl lg:text-7xl 2xl:text-8xl xl:text-8xl font-display 2xl:max-w-8xl xl:max-w-6xl sm:max-w-3xl max-w-md md:max-w-7xl lg:max-w-6xl text-left mb-"
+            className="md:text-[4.5rem] mt-2 sm:text-6xl  dark:text-teal-400 text-purple-600 flex flex-col text-6xl lg:text-[5.2rem] 2xl:text-[7rem] xl:text-8xl font-display 2xl:max-w-[100%] xl:max-w-6xl sm:max-w-3xl max-w-md md:max-w-7xl lg:max-w-6xl text-left mb-"
             aria-label="Hello! I am Antony Jude Shaman"
             style={{ zIndex: 10 }}
           >

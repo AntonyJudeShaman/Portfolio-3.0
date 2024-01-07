@@ -29,7 +29,7 @@ export default function NavMain({
     >
       <div className="flex flex-row mr-5 items-center justify-between space-x-2 bg">
         <p
-          className="logo-font select-none md:hidden pl-6 md:pl-2  flex-1 text-4xl font-bold"
+          className="logo-font select-none  md:hidden pl-6 md:pl-2  flex-1 text-4xl font-bold"
           aria-label="BIND"
           style={{ zIndex: 999999999 }}
         >
@@ -39,7 +39,7 @@ export default function NavMain({
           <MainNav items={navConfig.mainNav} />
         </div>
       </div>
-      <div className="md:ml-0 ml-5 flex mt-4 justify-between">
+      <div className="md:ml-0 ml-5 flex mt-4 justify-between 2xl:justify-aroun">
         <div className="hidden md:block">
           <MainNav items={navConfig.mainNav} />
         </div>

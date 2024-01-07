@@ -14,7 +14,7 @@ export default function Page(): JSX.Element {
   return (
     <>
       <div className="2xl:mx-auto overflow-hidden">
-        <div className="pl-0 md:pl-6 min-h-screen">
+        <div className="pl-0 md:pl-6 min-h-screen 2xl:min-h-[50rem]">
           <div className=" max-w-screen overflow-hidden">
             <Gradient className={styles.backgroundGradient} conic />
           </div>

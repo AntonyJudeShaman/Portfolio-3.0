@@ -18,9 +18,9 @@ export default function SiteFooter({
   return (
     <div className="max-w-screen">
       <footer className=" bg-gradient-to-rb from-transparent to-black/20">
-        <hr className="my-8 border-zinc-600 mx-auto justify-between md:max-w-[85rem] max-w-2xl lg:my-8" />
+        <hr className="my-8 border-zinc-600 mx-auto justify-between md:max-w-[90%] max-w-2xl lg:my-8" />
 
-        <div className="flex md:flex-row flex-col gap-y-8 justify-between items-center mx-auto text-lg md:text-md 2xl:max-w-[85rem] xl:max-w-[68rem] lg:max-w-[58rem] md:max-w-[48rem] max-w-[20rem] sm:text-center  text-gray-50">
+        <div className="flex md:flex-row flex-col gap-y-8 justify-between items-center mx-auto text-lg md:text-md 2xl:max-w-[90%] xl:max-w-[68rem] lg:max-w-[58rem] md:max-w-[48rem] max-w-[20rem] sm:text-center  text-gray-50">
           <div>
             {navConfig &&
               navConfig.mainNav.map((item, index) => (

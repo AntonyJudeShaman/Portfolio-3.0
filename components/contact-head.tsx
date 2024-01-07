@@ -6,12 +6,13 @@ import NavMain from "./nav";
 
 function ContactHead() {
   return (
-    <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-6 md:ml-0 min-h-screen  max-w-screen">
-      <NavMain />
-      <div className=" flex flex-row overflow-hidden">
-        <div className=" flex md:pl-5 justify-center ml-12 mt-24 md:mt-28 lg:mt-0 2xl:mt-0 xl:mt-0 md:ml-0 mx-auto flex-col md:m-0 m-6 text-left">
+    <><NavMain />
+    <div className="flex flex-col -mt-[5rem] -ml-6 md:ml-0 justify-center min-h-screen  max-w-screen">
+      
+      <div className=" flex items-center flex-row overflow-hidden justify-center">
+        <div className=" flex md:pl-5 justify-center ml-12 mx-auto flex-col md:m-0  2xl:max-w-[100%] text-left">
           <p
-            className="md:text-6xl sm:text-7xl  lg:text-7xl 2xl:text-8xl md:mt-20 lg:mt-12 xl:text-7xl font-display text-6xl 2xl:max-w-4xl xl:max-w-4xl lg:max-w-3xl text-left mb-"
+            className="md:text-6xl sm:text-7xl  lg:text-7xl 2xl:text-8xl xl:text-7xl font-display text-6xl  2xl:max-w-1/2 xl:max-w-4xl lg:max-w-3xl text-left mb-"
             aria-label="Lets create something special"
           >
             Let&apos;s create something special
@@ -31,7 +32,7 @@ function ContactHead() {
             height={300}
           />
         </div>
-        <div className="flex justify-center lg:mt-12 md:mt-28">
+        <div className="flex justify-center lg:mt-12 md:mt-28 2xl:mr-20 2xl:max-w-1/2">
         <Image
             src={coverImage}
             priority
@@ -44,7 +45,7 @@ function ContactHead() {
             src={coverImage}
             priority 
             alt="contact cover image"
-            className=" 2xl:hidden xl:block m-10 hidden"
+            className=" 2xl:hidden xl:block m-12 -mt-[2rem] hidden"
             width={400}
             height={400}
           />
@@ -52,7 +53,7 @@ function ContactHead() {
             src={coverImage}
             priority
             alt="contact cover image"
-            className=" m-10 lg:block  2xl:hidden xl:hidden hidden"
+            className=" m-10 lg:block  -mt-[3rem] 2xl:hidden xl:hidden hidden"
             width={300}
             height={300}
           />
@@ -60,13 +61,13 @@ function ContactHead() {
             src={coverImage}
             priority
             alt="contact cover image"
-            className="md:mr-16 lg:mr-24 lg:hidden md:block mt-10 2xl:hidden xl:hidden hidden"
-            width={200}
+            className="md:mr-16 lg:mr-24 lg:hidden md:block -mt-[8rem] 2xl:hidden xl:hidden hidden"
+            width={300}
             height={200}
           />
         </div>
       </div>
-    </div>
+    </div></>
   );
 }
 

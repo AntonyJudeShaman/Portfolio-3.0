@@ -17,13 +17,13 @@ export default function NewsLetter() {
 }
 
   return (
-    <div className="md:mx-auto grid md:ml-12 ml-0 md:grid-cols-2 max-w-8xl grid-cols-1 gap-10">
-      <div className="md:mt-[7rem] mt-[3rem] mx-auto">
-        <div className="p-6">
-          <h2 className="flex mb-4 md:text-6xl text-5xl items-center font-display bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400 text-transparent">
+    <div className="md:mx-auto md:ml-12 ml-0 flex lg:flex-row max-w-8xl flex-col gap-10">
+      <div className="md:mt-[7rem] mt-[3rem] max-w-1/2 mx-auto">
+        <div className="md:pr-4 md:p-0 p-6 lg:p-6 mx-auto">
+          <h2 className="flex mb-4 md:text-6xl text-4xl items-center font-display bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400 text-transparent">
             Dive into My Chronicles{" "}
           </h2>
-          <p className="dmsans mb-6 text-lg">
+          <p className="dmsans mb-6 md:text-lg text-md">
             Embark on a journey of knowledge with my exclusive newsletter. Stay
             ahead with captivating insights, thought-provoking interviews, and
             expert tips. Subscribe now for your regular dose of valuable content
@@ -35,13 +35,13 @@ export default function NewsLetter() {
               size="lg"
             >
               Explore Articles{" "}
-              <ArrowRight className="group-hover:opacity-0 ml-2 duration-500" />
-              <ChevronRight className="group-hover:opacity-100 delay-100 opacity-0 -ml-4 duration-500" />
+              <ArrowRight className="group-hover:opacity-100 delay-100 opacity-0 ml-1 duration-500" />
+              <ChevronRight className="group-hover:opacity-0 duration-500 -ml-6" />
             </Button>
           </Link>
         </div>
       </div>
-      <div className="mx-auto md:mr-[6rem] mr-[0rem] md:p-0 p-5 mb-[5rem] md:mt-[7rem] mt-[1rem] md:max-w-2xl rounded-xl">
+      <div className=" max-w-1/2 md:mr-[6rem] mr-[0rem] md:p-0 p-5 mb-[5rem] md:mt-[7rem] mt-[1rem] md:max-w-2xl rounded-xl">
         <Gradient4 className={styles.logoGradient4} conic />
         <Card>
           <form
@@ -49,13 +49,13 @@ export default function NewsLetter() {
             target="popupwindow"
             onSubmit={handleSubmit}
             action="https://buttondown.email/api/emails/embed-subscribe/antonyjudeshaman"
-            className="rounded-2xl md:p-8 p-5 embeddable-buttondown-form "
+            className="rounded-2xl md:min-w-[30rem] md:p-8 p-5 embeddable-buttondown-form "
           >
-            <h2 className="flex text-3xl items-center font-display text-zinc-900 dark:text-zinc-100">
+            <h2 className="flex md:text-3xl text-[160%] items-center font-display text-zinc-900 dark:text-zinc-100">
               <Icons.mail className="h-8 w-8 items-center" />
               <span className="ml-3">Embark on the Voyage</span>
             </h2>
-            <p className="mt-2 text-md text-zinc-600 poppins dark:text-zinc-400">
+            <p className="mt-2 md:text-md text-sm text-zinc-600 poppins dark:text-zinc-400">
               Be the first to know when I unveil new stories, and feel free to
               disembark whenever you like.
             </p>

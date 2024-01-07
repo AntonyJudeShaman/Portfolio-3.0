@@ -9,7 +9,7 @@ import { Gradient2, Gradient4 } from "./gradient";
 const Achievements = () => {
   return (
     <div className="py-16 mb-[2rem]  mx-auto flex justify-center items-center flex-col md:p-0 p-6">
-      <h2 className="flex mb-4 mt-[3rem] font-display md:text-6xl text-5xl items-center bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400 text-transparent">
+      <h2 className="flex mb-4 mt-[3rem] font-display md:text-6xl text-4xl items-center bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400 text-transparent">
         Courses & Accomplishments
       </h2>
       <div className="mt-5 flex flex-col dmsans max-w-5xl text-left gap-3  dark:text-slate-400 text-slate-600">

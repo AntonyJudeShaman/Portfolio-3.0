@@ -10,7 +10,7 @@ function AboutHead() {
       <div className=" flex flex-row">
         <div className=" flex md:pl-5 justify-center ml-12 mt-24 md:mt-28 lg:mt-0 2xl:mt-0 xl:mt-0 md:ml-0 mx-auto flex-col md:m-0 m-6 text-left">
           <p
-            className="md:text-6xl sm:text-6xl text-6xl lg:text-6xl 2xl:text-8xl md:mt-20 lg:mt-12 xl:text-6xl font-display 2xl:max-w-4xl xl:max-w-4xl lg:max-w-3xl text-left mb-"
+            className="md:text-6xl sm:text-6xl text-6xl lg:text-6xl 2xl:text-8xl md:mt-20 lg:mt-12 xl:text-6xl font-display 2xl:max-w-[80%] xl:max-w-4xl lg:max-w-3xl text-left mb-"
             aria-label="Hello! I am Antony Jude Shaman"
           >
             Hello! I am Antony Jude Shaman
