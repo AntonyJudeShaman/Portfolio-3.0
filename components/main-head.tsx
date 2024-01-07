@@ -15,7 +15,10 @@ function MainHead() {
     <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-4 md:ml-6 max-h-screen max-w-screen">
       <NavMain />
       <div className="flex flex-row 2xl:justify-center">
-        <div className="flex pl-5 2xl:mt-[4%] md:mt-[5%] mt-[8rem] 0 2xl:items-center md:ml-0 flex-col md:m-0 m-6 text-left"  style={{ zIndex: 10 }}>
+        <div
+          className="flex pl-5 2xl:mt-[4%] md:mt-[5%] mt-[8rem] 0 2xl:items-center md:ml-0 flex-col md:m-0 m-6 text-left"
+          style={{ zIndex: 10 }}
+        >
           <p
             className="md:text-4xl sm:text-4xl dark:text-white/90 text-black flex flex-col text-4xl lg:text-5xl 2xl:text-5xl  md:mt-20 lg:mt-12 xl:text-6xl font-display max-w-[80%] text-left mb-"
             aria-label="Hello! I am Antony Jude Shaman"
@@ -38,8 +41,15 @@ function MainHead() {
           </p>
           <SocialMediaIcons />
           <Link href="/resume.pdf" target="_blank" className="mt-8">
-          <Button className="glow-button border text-md poppins duration-300 hover:bg-white hover:text-black dark:hover:invert" size="lg">View Resume<Eye className="ml-2"/></Button>
-          </Link><Gradient className={styles.logoGradient2} conic />
+            <Button
+              className="glow-button hover:border text-md poppins duration-300 hover:bg-white hover:text-black dark:hover:invert"
+              size="lg"
+            >
+              View Resume
+              <Eye className="ml-2" />
+            </Button>
+          </Link>
+          <Gradient className={styles.logoGradient2} conic />
         </div>
 
         <div className="flex justify-center md:block hidden lg:mt-12 md:mt-28 ">
@@ -61,12 +71,7 @@ function MainHead() {
                 priority={true}
               />
             </div>
-            <div
-              className={cn(
-                styles.circles2,
-                "2xl:hidden xl:hidden block"
-              )}
-            >
+            <div className={cn(styles.circles2, "2xl:hidden xl:hidden block")}>
               <Image
                 alt="Circles"
                 height={1214}
