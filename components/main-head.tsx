@@ -16,7 +16,7 @@ function MainHead() {
       <NavMain />
       <div className="flex flex-row 2xl:justify-center">
         <div
-          className="flex pl-5 2xl:mt-[4%] md:mt-[5%] mt-[8rem] 0 2xl:items-center md:ml-0 flex-col md:m-0 m-6 text-left"
+          className="flex pl-5 2xl:ml-14 2xl:mt-[4%] md:mt-[5%] mt-[8rem] 0 2xl:items-center md:ml-0 flex-col md:m-0 m-6 text-left"
           style={{ zIndex: 10 }}
         >
           <p
@@ -66,7 +66,7 @@ function MainHead() {
                 height={1414}
                 src="circles.svg"
                 width={1414}
-                className="invert 2xl:block hidden xl:block pl-52 pt-52 dark:invert-0 "
+                className="invert 2xl:block hidden xl:block pl-36 pt-52 dark:invert-0 "
                 style={{ overflow: "hidden" }}
                 priority={true}
               />
