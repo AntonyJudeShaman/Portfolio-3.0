@@ -27,7 +27,7 @@ function MainHead() {
             Hello! I'm
           </p>
           <p
-            className="md:text-[4.5rem] mt-2 sm:text-6xl  dark:text-teal-400 text-purple-600 flex flex-col text-6xl lg:text-[5.2rem] 2xl:text-[7rem] xl:text-8xl font-display 2xl:max-w-[100%] xl:max-w-6xl sm:max-w-3xl max-w-md md:max-w-7xl lg:max-w-6xl text-left mb-"
+            className="md:text-[4.5rem] mt-2 sm:text-6xl dark:bg-clip-text dark:bg-gradient-to-b from-teal-400 to-blue-400 dark:text-transparent text-purple-600 flex flex-col text-6xl lg:text-[5.2rem] 2xl:text-[7rem] xl:text-8xl font-display 2xl:max-w-[100%] xl:max-w-6xl sm:max-w-3xl max-w-md md:max-w-7xl lg:max-w-6xl text-left mb-"
             aria-label="Hello! I am Antony Jude Shaman"
             style={{ zIndex: 10 }}
           >
