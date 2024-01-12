@@ -4,7 +4,7 @@
 <p align="center">
   Built with Nextjs and hosted on Vercel.
 </p>
-Welcome to my portfolio website! This repository contains the code for my personal portfolio.
+This repository contains the code for my personal portfolio.
 
 ## Prerequisites
 
