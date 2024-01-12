@@ -167,9 +167,9 @@ export default function ProjectPage() {
         <NavMain />
       </div>
       <div className="" style={{ zIndex: -99 }}>
-        <Gradient className={styles.backgroundGradient2} conic />
+        {/* <Gradient className={styles.backgroundGradient2} conic />
         <Gradient3 className={styles.backgroundGradient3} conic />
-        <Gradient4 className={styles.backgroundGradient4} conic />
+        <Gradient4 className={styles.backgroundGradient4} conic /> */}
         <div className="relative pb-16 pl-0 pr-0 md:pl-6 md:pr-16">
           <div className="px-6 pt-4 md:pl-5 space-y-8 lg:px- md:space-y-16">
             <div className="mx-auto lg:mx-0">
