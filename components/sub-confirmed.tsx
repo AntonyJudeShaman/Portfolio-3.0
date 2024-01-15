@@ -12,7 +12,7 @@ export default function SubConfirmed() {
       style={{ overflowY: "hidden" }}
     >
       <div className="mx-auto items-center justify-center grid grid-cols-1 lg:grid-cols-2 max-w-5xl">
-      <Particles
+        <Particles
           className="absolute inset-0 -z-10 animate-fade-in"
           quantity={50}
         />
