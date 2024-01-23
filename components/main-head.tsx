@@ -26,13 +26,15 @@ function MainHead() {
           >
             Hello! I'm
           </p>
-          <p
-            className="md:text-[4.5rem] mt-2 sm:text-6xl dark:bg-clip-text dark:bg-gradient-to-b from-teal-400 to-blue-400 dark:text-transparent text-purple-600 flex flex-col text-6xl lg:text-[5.2rem] 2xl:text-[7rem] xl:text-8xl font-display 2xl:max-w-[100%] xl:max-w-6xl sm:max-w-3xl max-w-md md:max-w-7xl lg:max-w-6xl text-left mb-"
+          <h1
+            className="md:text-[4.5rem] mt-2 md:flex-row sm:text-6xl dark:bg-clip-text dark:bg-gradient-to-b from-teal-400 to-blue-400 dark:text-transparent text-purple-600 flex flex-col text-6xl lg:text-[5.2rem] 2xl:text-[7rem] xl:text-8xl font-display 2xl:max-w-[100%] xl:max-w-6xl sm:max-w-3xl max-w-md md:max-w-7xl lg:max-w-6xl text-left mb-"
             aria-label="Hello! I am Antony Jude Shaman"
             style={{ zIndex: 10 }}
           >
-            Antony Jude Shaman{" "}
-          </p>
+            Antony Jude <span className="dark:bg-clip-text md:ml-[15px] ml-0 dark:bg-gradient-to-b from-teal-400 to-blue-400 dark:text-transparent text-purple-600"> Shaman
+            </span>
+          </h1>
+
           <p
             className="home-title max-w-screen poppins mr-5 md:mr-0 font-pops text-lg md:text-lg mt-5 2xl:text-xl xl:text-xl  mb-4  text-left"
             aria-label="I am currently a final year undergraduate student"

@@ -4,7 +4,7 @@ import ProjectPage from "@/components/projects-page";
 
 function About() {
   return (
-    <div className="mx-auto z-30">
+    <div className="mx-auto z-30 md:ml-8 ml-0">
       <title>Projects | Antony Jude Shaman</title>
       <ProjectPage />
       <div className="md:-ml-12">

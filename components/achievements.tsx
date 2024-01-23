@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "@/app/page.module.css";
 import { Button } from "./ui/button";
 import { Gradient2, Gradient4 } from "./gradient";
+import FeedbackButton from "./feedback-button";
 
 const Achievements = () => {
   return (
@@ -216,6 +217,7 @@ const Achievements = () => {
           </div>
         </div>
       </div>
+      {/* <FeedbackButton/> */}
     </div>
   );
 };

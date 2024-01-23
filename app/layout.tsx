@@ -113,7 +113,7 @@ export default function RootLayout({
         />
       </Head>
       <body
-        className="md:ml-8 ml-0 dark:selection:bg-purple-950 selection:bg-green-400"
+        className="md:ml- ml-0 dark:selection:bg-purple-950 selection:bg-green-400"
         style={{ maxWidth: "100%", maxHeight: "100%", overflowX: "hidden" }}
       >
         <ThemeProvider
