@@ -7,7 +7,7 @@
  <div align="center">
  <p>
 
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/AntonyJudeShaman/)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/AntonyJudeShaman/)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg?style=flat)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=AntonyJudeShaman/Portfolio-3.0&countColor=blue&style=flat)
 ![GitHub contributors](https://img.shields.io/github/contributors/AntonyJudeShaman/Portfolio-3.0?color=blue)
