@@ -1,0 +1,277 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  place-items: center;
+}
+
+.heroContent {
+  display: flex;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 4rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 48px;
+
+  @media (min-width: 768px) {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+  }
+  @media (min-width: 1024px) {
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+@media (min-width: 501px) {
+  .circles {
+    position: absolute;
+    min-width: 1214px;
+    min-height: 1214px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 500px) {
+  .circles {
+    position: absolute;
+    min-width: 1014px;
+    min-height: 1014px;
+  }
+}
+
+@media (min-width: 501px) {
+  .circles2 {
+    position: absolute;
+    min-width: 1414px;
+    min-height: 1414px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
+
+.logo {
+  z-index: 50;
+  width: 200px;
+  height: 200px;
+}
+
+.logoGradientContainer {
+  display: flex;
+  position: absolute;
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 16rem;
+}
+
+.gradient {
+  position: absolute;
+  mix-blend-mode: normal;
+  will-change: filter;
+}
+
+.gradientSmall {
+  filter: blur(32px);
+}
+
+.gradientLarge {
+  filter: blur(75px);
+}
+
+.glowConic {
+  background-image: var(--glow-conic);
+}
+
+.glowConic2 {
+  background-image: var(--glow-conic2);
+}
+
+.glowConic3 {
+  background-image: var(--glow-conic3);
+}
+
+.glowConic4 {
+  background-image: var(--glow-conic4);
+}
+
+
+.logoGradient {
+  opacity: 0.6;
+  width: 200px;
+  height: 200px;
+}
+
+
+.logoGradient2 {
+  opacity: 0.4;
+  width: 120px;
+  height: 120px;
+}
+
+.logoGradient3 {
+  opacity: 0.15;
+  top: -50px;
+  width: 400px;
+  height: 400px;
+}
+
+.logoGradient4 {
+  opacity: 0.25;
+  width: 600px;
+  height: 330px;
+}
+
+.logoGradient5 {
+  opacity: 0.18;
+  width: 400px;
+  height: 400px;
+}
+
+.logoGradient6 {
+  opacity: 0.2;
+  width: 250px;
+  height: 250px;
+}
+
+@media (max-width: 500px) {
+  .logoGradient4 {
+    opacity: 0.25;
+    width: 300px;
+    height: 330px;
+  }
+  
+  .logoGradient5 {
+    opacity: 0.18;
+    width: 140px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 500px) {
+  .backgroundGradient {
+    top: -250px;
+    width: 100vw;
+    height: 800px;
+    opacity: 0.15;
+  }
+
+  .backgroundGradient2 {
+    top: 50px;
+    width: 100vw;
+    height: 1000px;
+    opacity: 0.13;
+  }
+  .backgroundGradient3 {
+    top: 650px;
+    width: 100vw;
+    height: 900px;
+    opacity: 0.2;
+  }
+  .backgroundGradient4 {
+    top: 1450px;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.1;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 501px){
+  .backgroundGradient {
+    top: -250px;
+    width: 50vw;
+    height: 800px;
+    opacity: 0.15;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .logoGradient {
+    opacity: 0.9;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.logoGradient2 {
+  opacity: 0.2;
+  width: 10%;
+  height: 120px;
+}
+
+@media (min-width: 1001px) {
+  .backgroundGradient {
+    top: -500px;
+    width: 1200px;
+    height: 1000px;
+    opacity: 0.15;
+  }
+}
+
+@media (min-width: 501px) {
+  .backgroundGradient2 {
+    top: 00px;
+    width: 80vw;
+    height: 1000px;
+    opacity: 0.05;
+  }
+}
+
+@media (min-width: 501px) {
+  .backgroundGradient3 {
+    top: 1900px;
+    width: 50vw;
+    height: 800px;
+    opacity: 0.009;
+  }
+  .backgroundGradient4 {
+    top: 2400px;
+    width: 80vw;
+    height: 1200px;
+    opacity: 0.009;
+  }
+}
+
+@media (max-width: 501px) {
+  .contactGradient2 {
+    top: -00px;
+    width: 300px;
+    height: 600px;
+    opacity: 0.1;
+  }
+}
+
+@media (min-width: 501px) {
+  .contactGradient2 {
+    top: -00px;
+    width: 1200px;
+    height: 1000px;
+    opacity: 0.1;
+  }
+}
+
+@media (min-width: 501px) {
+  .contactGradient {
+    top: -00px;
+    width: 100vw;
+    height: 1000px;
+    opacity: 0.15;
+  }
+}
