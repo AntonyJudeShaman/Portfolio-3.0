@@ -12,7 +12,7 @@ import { Eye } from "lucide-react";
 
 function MainHead() {
   return (
-    <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-4 md:ml-6 max-h-screen max-w-screen">
+    <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-4 md:ml-12 max-h-screen max-w-screen">
       <NavMain />
       <div className="flex flex-row 2xl:justify-center">
         <div
@@ -31,7 +31,10 @@ function MainHead() {
             aria-label="Hello! I am Antony Jude Shaman"
             style={{ zIndex: 10 }}
           >
-            Antony Jude <span className="dark:bg-clip-text md:ml-[15px] ml-0 dark:bg-gradient-to-b from-teal-400 to-blue-400 dark:text-transparent text-purple-600"> Shaman
+            Antony Jude{" "}
+            <span className="dark:bg-clip-text md:ml-[15px] ml-0 dark:bg-gradient-to-b from-teal-400 to-blue-400 dark:text-transparent text-purple-600">
+              {" "}
+              Shaman
             </span>
           </h1>
 
