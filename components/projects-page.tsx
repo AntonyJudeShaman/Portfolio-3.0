@@ -89,6 +89,7 @@ export default function ProjectPage() {
         "typescript",
         "structured-data",
         "seo",
+        "server-side-rendering",
       ],
     },
   };
