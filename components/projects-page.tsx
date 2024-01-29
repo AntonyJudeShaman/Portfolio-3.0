@@ -7,8 +7,6 @@ import { Article } from "@/components/article";
 import NavMain from "@/components/nav";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ExternalLink as L } from "lucide-react";
-import { Gradient, Gradient3, Gradient4 } from "@/components/gradient";
-import styles from "@/app/page.module.css";
 
 const octokit = new Octokit({
   auth: process.env.NEXT_PUBLIC_GITHUB_TOKEN,
@@ -43,7 +41,7 @@ export default function ProjectPage() {
           result
             .filter(
               (project) =>
-                !["cru", "To-Do-List-in-Nextjs", "Tri2Champ"].includes(
+                !["cru", "article-summarizer", "Tri2Champ"].includes(
                   project.name
                 )
             )
@@ -56,8 +54,8 @@ export default function ProjectPage() {
               }
 
               return (
-                new Date(b.created_at ?? Number.POSITIVE_INFINITY).getTime() -
-                new Date(a.created_at ?? Number.POSITIVE_INFINITY).getTime()
+                new Date(b.created_at).getTime() -
+                new Date(a.created_at).getTime()
               );
             })
         );
@@ -73,7 +71,7 @@ export default function ProjectPage() {
   });
 
   const top2 = allProjects.filter((project) => {
-    return project.name.includes("To-Do-List-in-Nextjs");
+    return project.name.includes("article-summarizer");
   });
   const top3 = allProjects.filter((project) => project.name === "Tri2Champ");
 
@@ -167,9 +165,6 @@ export default function ProjectPage() {
         <NavMain />
       </div>
       <div className="" style={{ zIndex: -99 }}>
-        {/* <Gradient className={styles.backgroundGradient2} conic />
-        <Gradient3 className={styles.backgroundGradient3} conic />
-        <Gradient4 className={styles.backgroundGradient4} conic /> */}
         <div className="relative pb-16 pl-0 pr-0 md:pl-6 md:pr-16">
           <div className="px-6 pt-4 md:pl-5 space-y-8 lg:px- md:space-y-16">
             <div className="mx-auto lg:mx-0">
@@ -195,10 +190,13 @@ export default function ProjectPage() {
                   ))}
                 </>
               ) : (
-                // my featured project is a private repo and cannot make it public, so i used hardcoded values
+                // my featured project is a private repo and cannot make it public, so its hardcoded.
                 featured.map((project) => (
                   <Card key={project.name}>
-                    <Link href="https://www.bindarchitects.com/" target="_blank">
+                    <Link
+                      href="https://www.bindarchitects.com/"
+                      target="_blank"
+                    >
                       <article className="relative  group flex-col flex justify-center w-full h-full p-6 md:p-8">
                         <div className="flex items-center justify-between gap-2">
                           <div className="text-sm z-30 text-zinc-900 poppins dark:text-zinc-100">
@@ -217,7 +215,7 @@ export default function ProjectPage() {
                             id="project-post"
                             className="mt-4 text-3xl z-30 font-bold duration-1000 dark:text-zinc-100 dark:group-hover:text-white text-zinc-900 group-hover:text-black sm:text-4xl md:text-5xl font-display"
                           >
-                            Studio Bind Architects
+                            Bind Architects
                           </h2>
                           {/* {project?.homepage.length > 0 && ( */}
                           <Link
@@ -232,17 +230,17 @@ export default function ProjectPage() {
 
                         <p className="mt-4 leading-8 dmsans duration-1000 text-zinc-600 group-hover:text-zinc-700 dark:text-zinc-400 dark:group-hover:text-zinc-300">
                           {/* {featured.description} */}
-                          Crafted a sleek website with a
-                          dark-themed UI using Nextjs and Tailwind CSS,
-                          featuring secure admin login for project management.
-                          The Projects page boasts scrollable cards for elegant
-                          project display, while the Contact page includes a
-                          business description and a functional contact form. A
-                          seamless blend of design and functionality for
-                          efficient project management and client interaction.
+                          Crafted a sleek website with a dark-themed UI using
+                          Nextjs and Tailwind CSS, featuring secure admin login
+                          for project management. The Projects page boasts
+                          scrollable cards for elegant project display, while
+                          the Contact page includes a business description and a
+                          functional contact form. A seamless blend of design
+                          and functionality for efficient project management and
+                          client interaction.
                         </p>
                         <p className="relative z-30 mt-6 flex flex-wrap text-sm font-medium text-gray-500 dark:text-gray-400">
-                        {/* {featured?.topics?.map((topic, index) => ( */}
+                          {/* {featured?.topics?.map((topic, index) => ( */}
                           {projectData?.project?.topics?.map((topic, index) => (
                             <span
                               key={index}
@@ -258,7 +256,7 @@ export default function ProjectPage() {
                               {topic}
                             </span>
                           ))}
-              {/* ))} */}
+                          {/* ))} */}
                         </p>
                       </article>
                     </Link>
