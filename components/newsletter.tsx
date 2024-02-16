@@ -67,11 +67,13 @@ export default function NewsLetter() {
                 placeholder="Your Email Address"
                 aria-label="Email address"
                 required
+                disabled
                 className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-700/80 bg-white px-3 shadow-lg placeholder:text-slate-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-500 dark:text-zinc-900 poppins dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
               />
               <Button
                 type="submit"
                 variant="outline"
+                disabled
                 className="md:ml-4 poppins w-[6rem] ml-0 mt-5 md:mt-0 flex-none"
               >
                 Subscribe
