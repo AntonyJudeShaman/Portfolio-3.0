@@ -14,7 +14,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/AntonyJudeShaman/Portfolio-3.0?color=blue)
  </p>
  </div>
-This repository contains the code for my personal portfolio.
+This repository contains the code for my personal portfolio. Please give it a ⭐ if u like it😊.
 
 ## Prerequisites
 
