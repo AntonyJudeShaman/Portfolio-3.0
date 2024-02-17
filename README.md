@@ -26,8 +26,8 @@ Before you begin, ensure you have the following installed on your machine:
 ## Clone the Repository
 
 ```
-git clone https://github.com/AntonyJudeShaman/portfolio3.0.git
-cd portfolio3.0
+git clone https://github.com/AntonyJudeShaman/portfolio-3.0.git
+cd portfolio-3.0
 ```
 
 ## Install Dependencies
