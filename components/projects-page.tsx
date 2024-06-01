@@ -41,7 +41,7 @@ export default function ProjectPage() {
           result
             .filter(
               (project) =>
-                !["cru", "article-summarizer", "Tri2Champ"].includes(
+                !["AgroVoiceAI", "BindArchitects", "Tri2Champ"].includes(
                   project.name
                 )
             )
