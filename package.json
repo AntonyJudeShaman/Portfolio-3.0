@@ -37,7 +37,7 @@
     "material-ui": "^0.20.2",
     "next": "14.0.4",
     "next-contentlayer": "latest",
-    "next-themes": "^0.2.1",
+    "next-themes": "^0.3.0",
     "prop-types": "^15.8.1",
     "radix-ui": "^1.0.1",
     "react": "18.2.0",
