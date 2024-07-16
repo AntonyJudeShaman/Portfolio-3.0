@@ -94,12 +94,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" />
       <link rel="manifest" href="/static/favicons/site.webmanifest" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://blogs.antonyjudeshaman.vercel.app/" />
+      <meta property="og:url" content={`${siteConfig.blogSiteUrl}/`} />
       <meta property="og:title" content="Antony Jude Shaman" />
       <meta property="og:description" content="Portfolio website" />
       <meta
         property="og:image"
-        content="https://blogs.antonyjudeshaman.vercel.app/my-banner.jpeg"
+        content={`${siteConfig.blogSiteUrl}/my-banner.jpeg`}
       />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />

@@ -25,7 +25,6 @@ export default function NavMain({ className }: React.HTMLAttributes<HTMLElement>
       <div className="bg flex flex-row items-center justify-between space-x-2">
         <p
           className="logo-font flex-1 select-none font-display text-4xl font-bold md:hidden "
-          aria-label="BIND"
           style={{ zIndex: 999999999 }}
         >
           Antony

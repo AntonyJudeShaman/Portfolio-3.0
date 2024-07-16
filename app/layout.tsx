@@ -7,6 +7,7 @@ import LocalFont from "@next/font/local";
 import Head from "next/head";
 import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/react";
+import { siteConfig } from "config/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const poppins = Poppins({
@@ -22,15 +23,15 @@ const calSans = LocalFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://antonyjudeshaman.vercel.app"),
-  title: "Antony Jude Shaman",
-  description: "Portfolio website of Antony Jude Shaman",
+  metadataBase: new URL(`${siteConfig.siteUrl}`),
+  title: `${siteConfig.name}`,
+  description: `${siteConfig.description}`,
   openGraph: {
-    title: "Antony Jude Shaman",
-    description: "Portfolio website of Antony Jude Shaman",
+    title: `${siteConfig.name}`,
+    description: `${siteConfig.description}`,
     url: "./",
-    siteName: "Antony Jude Shaman",
-    images: "https://blogs.antonyjudeshaman.vercel.app/my-banner.jpeg",
+    siteName: `${siteConfig.name}`,
+    images: `${siteConfig.blogSiteUrl}/my-banner.jpeg`,
     locale: "en_US",
     type: "website",
   },
@@ -49,11 +50,11 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Antony Jude Shaman",
+    title: `${siteConfig.name}`,
     card: "summary_large_image",
     images: [
       {
-        url: "https://blogs.antonyjudeshaman.vercel.app/my-banner.jpeg",
+        url: `${siteConfig.blogSiteUrl}/my-banner.jpeg`,
         width: 1200,
         height: 630,
       },
@@ -73,7 +74,7 @@ export default function RootLayout({
       suppressHydrationWarning={true}
     >
       <Head>
-        <title>Antony Jude Shaman</title>
+        <title>{siteConfig.name}</title>
         <meta
           name="twitter:image:alt"
           property="og:image:alt"
@@ -91,25 +92,22 @@ export default function RootLayout({
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://antonyjudeshaman.vercel.app/"
-        />
-        <meta property="og:title" content="Antony Jude Shaman" />
+        <meta property="og:url" content={`${siteConfig.siteUrl}`} />
+        <meta property="og:title" content={`${siteConfig.name}`} />
         <meta property="og:description" content="Portfolio website" />
 
         <meta
           property="og:image"
-          content="https://blogs.antonyjudeshaman.vercel.app/my-banner.jpeg"
+          content={`${siteConfig.blogSiteUrl}/my-banner.jpeg`}
         />
 
         <meta name="description" content="Portfolio website" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Antony Jude Shaman" />
+        <meta name="twitter:title" content={`${siteConfig.name}`} />
         <meta name="twitter:description" content="Portfolio website" />
         <meta
           name="twitter:image"
-          content="https://blogs.antonyjudeshaman.vercel.app/my-banner.jpeg"
+          content={`${siteConfig.blogSiteUrl}/my-banner.jpeg`}
         />
       </Head>
       <body

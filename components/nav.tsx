@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { MainNav } from "@/components/main-nav";
 import { ModeToggle } from "./themeToggler";
 import React from "react";
+import { siteConfig } from "config/site";
 
 interface MarketingLayoutProps {
   children: React.ReactNode;
@@ -67,7 +68,7 @@ export default function NavMain({
               </>
             ))}
           <Link
-            href="https://blogs.antonyjudeshaman.vercel.app"
+            href={`${siteConfig.blogSiteUrl}`}
             target="_blank"
             className={cn(
               "group relative flex flex-col justify-center text-right text-lg items-center overflow-hidden poppins hidden mr-4 dark:text-zinc-300 text-zinc-900 md:inline-block rounded-md p-2 font-medium",

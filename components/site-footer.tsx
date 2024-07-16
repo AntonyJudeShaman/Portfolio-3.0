@@ -5,6 +5,7 @@ import { ModeToggle } from "@/components/themeToggler";
 import { navConfig } from "config/home";
 import { cn } from "@/lib/utils";
 import { TypeBot } from "./typebot";
+import { siteConfig } from "config/site";
 
 export default function SiteFooter({
   className,
@@ -41,7 +42,7 @@ export default function SiteFooter({
                 </>
               ))}
             <Link
-              href="https://blogs.antonyjudeshaman.vercel.app"
+              href={`${siteConfig.blogSiteUrl}`}
               target="_blank"
               className={cn(
                 "group relative flex flex-col justify-center text-right text-lg items-center overflow-hidden poppins dark:text-zinc-300 text-zinc-900 md:inline-block rounded-md p-2 font-medium",
@@ -55,11 +56,11 @@ export default function SiteFooter({
           </div>
           <div className="-mt-1">{isHydrated && <ModeToggle />}</div>{" "}
           <div className="poppins dark:text-zinc-300 -mt-3 text-zinc-900">
-            &copy; {new Date().getFullYear()} Antony Jude Shaman.
+            &copy; {new Date().getFullYear()} {siteConfig.name}
           </div>
         </div>
       </footer>
-      <TypeBot/>
+      <TypeBot />
     </div>
   );
 }

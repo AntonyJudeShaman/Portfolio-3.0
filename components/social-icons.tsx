@@ -18,39 +18,40 @@ import {
 import { FaNode } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { TbBrandNextjs, TbBrandRadixUi } from "react-icons/tb";
+import { siteConfig } from "config/site";
 
 export const SocialMediaIcons = () => (
   <div className="flex flex-row gap-8 mt-5" style={{ zIndex: -9 }}>
     <Link
-      href="https://www.instagram.com/stark_shaman/"
+      href={`${siteConfig.links.instagram}`}
       target="_blank"
       rel="noopener noreferrer"
     >
       <Icons.insta className="dark:hover:text-teal-200 hover:text-purple-800 text-purple-600 dark:text-blue-400 hover:-translate-y-1 duration-300 h-[28px] w-[28px]" />
     </Link>
     <Link
-      href="https://github.com/AntonyJudeShaman"
+      href={`${siteConfig.links.github}`}
       target="_blank"
       rel="noopener noreferrer"
     >
       <Icons.gitHub className="dark: dark:hover:text-teal-200 hover:text-purple-800 text-purple-600 dark:text-blue-400 hover:-translate-y-1 duration-300 h-[28px] w-[28px]" />
     </Link>
     <Link
-      href="https://www.linkedin.com/in/antony-jude-shaman/"
+      href={`${siteConfig.links.linkedin}`}
       target="_blank"
       rel="noopener noreferrer"
     >
       <Icons.linkedin className="dark: dark:hover:text-teal-200 hover:text-purple-800 text-purple-600 dark:text-blue-400 hover:-translate-y-1 duration-300 h-[28px] w-[28px]" />
     </Link>
     <Link
-      href="mailto:antonyjudeshaman.24cs@licet.ac.in"
+      href={`mailto:${siteConfig.links.email}`}
       target="_blank"
       rel="noopener noreferrer"
     >
       <Icons.mail className="dark: dark:hover:text-teal-200 hover:text-purple-800 text-purple-600 dark:text-blue-400 hover:-translate-y-1 duration-300 h-[28px] w-[28px]" />
     </Link>
     <Link
-      href="https://codepen.io/AntonyJudeShaman"
+      href={`${siteConfig.links.codepen}`}
       target="_blank"
       rel="noopener noreferrer"
     >

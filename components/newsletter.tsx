@@ -9,12 +9,12 @@ import { ArrowRight, ChevronRight } from "lucide-react";
 import { Input2 } from "./ui/input2";
 import { Gradient4 } from "./gradient";
 import styles from "@/app/page.module.css";
+import { siteConfig } from "config/site";
 
 export default function NewsLetter() {
-
   function handleSubmit() {
-    window.open('https://buttondown.email/antonyjudeshaman', 'popupwindow');
-}
+    window.open("https://buttondown.email/antonyjudeshaman", "popupwindow");
+  }
 
   return (
     <div className="md:mx-auto md:ml-12 ml-0 flex lg:flex-row max-w-8xl flex-col gap-10">
@@ -29,7 +29,7 @@ export default function NewsLetter() {
             expert tips. Subscribe now for your regular dose of valuable content
             delivered straight to your inbox.
           </p>
-          <Link href="https://blogs.antonyjudeshaman.vercel.app" className="group">
+          <Link href={`${siteConfig.blogSiteUrl}`} className="group">
             <Button
               className="text-md poppins duration-100 hover:bg-white hover:text-black dark:hover:invert border border-black "
               size="lg"

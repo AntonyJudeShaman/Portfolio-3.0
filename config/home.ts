@@ -1,5 +1,6 @@
 import { NavConfig } from "types";
 import { DiJira, DiGoogleCloudPlatform } from "react-icons/di";
+import { siteConfig } from "./site";
 
 // NavConfig.ts
 export const navConfig: NavConfig = {
@@ -23,15 +24,15 @@ export const socialConfig = {
   socialMedia: [
     {
       name: "GitHub",
-      url: "https://github.com/AntonyJudeShaman",
+      url: `${siteConfig.links.github}`,
     },
     {
       name: "Instagram",
-      url: "https://www.instagram.com/stark-shaman",
+      url: `${siteConfig.links.instagram}`,
     },
     {
       name: "Linkedin",
-      url: "https://www.linkedin.com/in/antony-jude-shaman/",
+      url: `${siteConfig.links.linkedin}`,
     },
   ],
 };
