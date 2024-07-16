@@ -1,0 +1,460 @@
+---
+title: REST APIs with Next.js App Router and ORM
+date: 2023-12-13
+lastmod: '2023-12-13'
+tags: ['next-js', 'tailwind', 'guide', 'prisma', 'code','markdown', 'RestAPI']
+draft: false
+summary: ' In this blog, we delve into the realm of REST APIs, leveraging the powerful capabilities of Next.js app router and the versatile Prisma ORM. Discover how to seamlessly integrate server-side API routes into your Next.js applications, interact with a PostgreSQL database, and wield the prowess of Prisma for efficient and type-safe database operations.'
+images: ['/static/images/twitter-card.png']
+---
+
+# Introduction
+
+<TOCInline toc={props.toc} exclude="Introduction" />
+
+Next.js is a React framework that provides features such as server-side rendering, static site generation, and API routes. In this blog post, I will show you how to use Next.js app router to create server-side API routes that interact with a PostgreSQL database using an ORM (Object-Relational Mapping) tool called Prisma.
+
+## What You Need
+
+To follow along with this tutorial, you will need:
+
+- A text editor, such as Visual Studio Code, Sublime Text, or Atom.
+- A web browser, such as Chrome, Firefox, or Edge.
+- Node.js and npm installed on your machine.
+- A PostgreSQL database and a user with access to it.
+
+## Step 1: Set Up the Project
+
+First, let's create a new Next.js project using the following command:
+
+```bash
+npx create-next-app next-rest-api
+```
+
+This will create a new folder called `next-rest-api` with some boilerplate code and dependencies. Next, let's install Prisma as a development dependency using the following command:
+
+```bash
+npm install --save-dev prisma
+```
+
+Prisma is a next-generation ORM that can be used to access a database in Node.js and TypeScript applications. Prisma provides a schema-based approach to define your database models and relations, and generates a type-safe client to perform queries and mutations on the database.
+
+Next, let's initialize Prisma for our project using the following command:
+
+```bash
+npx prisma init
+```
+
+This will create two files in the root of our project: `prisma/schema.prisma` and `prisma/.env`. The `schema.prisma` file is where we define our database models and relations, and the `.env` file is where we store our database connection string.
+
+## Step 2: Define the Database Schema
+
+For this tutorial, we will use a simple database schema with two models: `User` and `Post`. A user can have many posts, and a post belongs to one user. Let's open the `schema.prisma` file and replace its content with the following:
+
+```js:schema.prisma
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  name  String
+  posts Post[]
+}
+
+model Post {
+  id       Int    @id @default(autoincrement())
+  title    String
+  content  String
+  authorId Int
+  author   User   @relation(fields: [authorId], references: [id])
+}
+```
+
+Here, we define two models: `User` and `Post`, with their respective fields and types. We also use the `@id` attribute to mark the primary key, the `@default` attribute to specify the default value, the `@unique` attribute to enforce the uniqueness constraint, and the `@relation` attribute to define the foreign key and the relation between the models.
+
+Next, let's open the `.env` file and replace its content with the following:
+
+```env
+DATABASE_URL="postgresql://username:name@localhost:5432/database?schema=public"
+```
+
+Here, we set the `DATABASE_URL` environment variable to our PostgreSQL connection string, where we replace `username`, `name`, `database` with our own values.
+
+## Step 3: Migrate the Database Schema
+
+Now that we have defined our database schema, we need to apply it to our PostgreSQL database. To do that, we will use Prisma Migrate, which is a tool that helps us create and run database migrations based on our Prisma schema.
+
+First, let's initialize our prisma client using the following command:
+
+```bash
+npx prisma migrate dev --name init
+```
+
+Let's create a new migration using the following command:
+
+```bash
+npx prisma migrate dev --name init
+```
+
+This will create a new folder called `prisma/migrations` with a subfolder containing the SQL statements to create the `User` and `Post` tables in our database. It will also apply the migration to our database and generate the Prisma client, which is a type-safe library that we can use to access our database in our code.
+
+Next, let's seed some dummy data to our database using the following command:
+
+```bash
+npx prisma db seed --preview-feature
+```
+
+This will run a script called `prisma/seed.ts` that we can use to insert some data to our database using the Prisma client. For this tutorial, let's create the following file with some sample data:
+
+### The Challenge
+
+Creating multiple instances of the Prisma Client can lead to unnecessary connections to the database, impacting performance and resource utilization. To address this, we'll leverage a global variable to ensure a single, shared instance of the Prisma Client across various modules and files.
+
+```ts:prisma.ts
+import { PrismaClient } from "@prisma/client";
+
+declare global {
+  var prisma: PrismaClient | undefined;
+}
+
+const prisma = global.prisma || new PrismaClient();
+
+if (process.env.NODE_ENV === "development") global.prisma = prisma;
+
+export default prisma;
+
+```
+
+Now that we have our global Prisma Client, we can use it across different parts of our application without worrying about multiple client instances.
+
+Next, let's import our Prisma instance using the following command:
+
+```
+import prisma from './prisma';
+```
+
+Now, let's see an example code in Next.js app router that defines server-side API routes using the NextRouter component. These routes interact with a PostgreSQL database using the Prisma ORM (Object-Relational Mapping) tool
+
+```ts
+import prisma from './prisma'
+
+async function main() {
+  await prisma.user.create({
+    data: {
+      name: 'Antony',
+      id: 'antony@example.com',
+      posts: {
+        create: [
+          {
+            title: 'Hello World',
+            content: 'This is my first post',
+          },
+          {
+            title: 'Next.js Rocks',
+            content: 'This is my second post',
+          },
+        ],
+      },
+    },
+  })
+
+  await prisma.user.create({
+    data: {
+      name: 'Jude',
+      id: 'jude@example.com',
+      posts: {
+        create: [
+          {
+            title: 'How to Use Prisma',
+            content: 'This is my third post',
+          },
+          {
+            title: 'How to Use Next.js',
+            content: 'This is my fourth post',
+          },
+        ],
+      },
+    },
+  })
+}
+
+main()
+  .catch((e) => {
+    console.error(e)
+    process.exit(1)
+  })
+  .finally(async () => {
+    await prisma.$disconnect()
+  })
+```
+
+## Step 4: Create the API Routes
+
+Now that we have our database set up and seeded, we can create our API routes using Next.js app router. The app router is a feature that allows us to create server-side API routes as React components, using the `NextRequest` and `NextcreateResponse` objects to handle the incoming requests and outgoing createResponses.
+
+To create an api, lets create a file called `/api/createPost/route.ts` in the app directory, and export a default function that returns a `NextRouter` component. The `NextRouter` component takes a `routes` prop, which is an array of objects that define the path, method, and handler for each API route.
+
+For this tutorial, we will create four API routes to demonstarte the `CRUD` operations:
+
+- `POST /api/createPost` to create a post
+- `GET /api/getPost` to get a post
+- `DELETE /api/deletePost` to delete posts
+- `PUT /api/updatePost` to update a post
+
+### Creating a new post
+
+Let's create the `api/createPost/route.ts` file with the following content in the app directory:
+
+```ts:route.ts
+import prisma from "./prisma";
+import { NextApiRequest } from "next";
+import { NextcreateResponse } from "next/server";
+
+export async function POST(req: NextApiRequest) {
+  const { title, content, authorId } = await req.json();
+
+  try {
+    const existingAuthor = await prisma.user.findUnique({
+      where: {
+        id: authorId,
+      },
+    });
+
+    if (!existingAuthor) {
+      return NextcreateResponse.json(
+        { error: "Author does not exist" },
+        { status: 400 }
+      );
+    }
+
+    const newPost = await prisma.post.create({
+      data: {
+        title,
+        content,
+        authorId,
+      },
+    });
+
+    return NextcreateResponse.json(newPost);
+  } catch (error) {
+    console.error("Error creating post:", error);
+    return NextcreateResponse.json(
+      { error: "An error occurred while creating the post" },
+      { status: 500 }
+    );
+  }
+}
+```
+
+<blockquote>
+  This Next.js API route defines a POST handler for creating a new post, checking if the post with a
+  specified id already exists in the Prisma-backed database. If the user exists, it returns an error
+  createResponse; otherwise, it creates the post, handles errors, and responds with the post details.
+</blockquote>
+
+### Retreiving a Post
+
+```ts:getPost.ts
+import prisma from "./prisma";
+import { NextcreateResponse } from "next/server";
+
+export async function PUT(req: Request) {
+  try {
+    const { postId } = await req.json();
+
+    const existingPost = await prisma.post.findUnique({
+      where: {
+        postId,
+      },
+    });
+
+    if (!existingPost) {
+      return NextcreateResponse.json(
+        { error: "Post not found" },
+        { status: 404 }
+      );
+    }
+
+    const getPost = await prisma.post.findUnique({
+      where: {
+        postId,
+      },
+      data: {
+        // Add the properties you want to update
+      },
+    });
+
+    return NextcreateResponse.json(getPost);
+  } catch (error) {
+    console.error("Error retreiving post:", error);
+    return NextcreateResponse.json(
+      { error: "An error occurred while retreiving the post" },
+      { status: 500 }
+    );
+  }
+}
+
+```
+
+
+### Updating a Post
+
+```ts:updatePost.ts
+import prisma from "./prisma";
+import { NextcreateResponse } from "next/server";
+
+export async function PUT(req: Request) {
+  try {
+    const { postId } = await req.json();
+
+    const existingPost = await prisma.post.findUnique({
+      where: {
+        postId,
+      },
+    });
+
+    if (!existingPost) {
+      return NextcreateResponse.json(
+        { error: "Post not found" },
+        { status: 404 }
+      );
+    }
+
+    const updatedPost = await prisma.post.update({
+      where: {
+        postId,
+      },
+      data: {
+        // Add the properties you want to update
+      },
+    });
+
+    return NextcreateResponse.json({ message: "Post updated successfully" });
+  } catch (error) {
+    console.error("Error updating post:", error);
+    return NextcreateResponse.json(
+      { error: "An error occurred while updating the post" },
+      { status: 500 }
+    );
+  }
+}
+```
+
+### Deleting a Post
+
+```ts:deletePost.ts
+import prisma from "./prisma";
+import { NextcreateResponse } from "next/server";
+
+export async function DELETE(req: Request) {
+  try {
+    const { postId } = await req.json();
+
+    const existingPost = await prisma.post.findUnique({
+      where: {
+        postId,
+      },
+    });
+
+    if (!existingPost) {
+      return NextcreateResponse.json(
+        { error: "Post not found" },
+        { status: 404 }
+      );
+    }
+
+    await prisma.post.delete({
+      where: {
+        postId,
+      }
+    });
+
+    return NextcreateResponse.json({ message: "Post deleted successfully" });
+  } catch (error) {
+    console.error("Error deleting post:", error);
+    return NextcreateResponse.json(
+      { error: "An error occurred while deleting the post" },
+      { status: 500 }
+    );
+  }
+}
+
+```
+
+<blockquote>
+  Now that we have our api ready, its now time to call our api to see if its working
+</blockquote>
+
+```ts:create.ts
+const createPost = async () => {
+
+  try {
+    const createResponse = await fetch('api/createPost', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        title: 'Sample Title',
+        content: 'This is the content of the post.',
+        authorId: 1534,
+      }),
+    });
+
+    if (!createResponse.ok) {
+      const errorData = await createResponse.json();
+      throw new Error(`API error: ${errorData.error}`);
+    }
+
+    const postData = await createResponse.json();
+    console.log('Post created:', postData);
+  } catch (error) {
+    console.error('Error creating post:', error.message);
+  }
+};
+
+createPost(); // useEffect() can be used to call only once when mounted
+```
+
+```ts:retreive.ts
+const getPost = async () => {
+
+  try {
+    const getResponse = await fetch('api/getPost', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        id: //id of the post,
+      }),
+    });
+
+    if (!getResponse.ok) {
+      const errorData = await getResponse.json();
+      throw new Error(`API error: ${errorData.error}`);
+    }
+
+    const postData = await getResponse.json();
+    console.log('Post retreived:', postData);
+  } catch (error) {
+    console.error('Error getting post:', error.message);
+  }
+};
+
+getPost(); // useEffect() can be used to call only once when mounted
+```
+
+In this comprehensive guide, we learned to integrate Next.js with Prisma to create RESTful APIs. We set up a Next.js app, defined a PostgreSQL database schema using Prisma, and implemented essential CRUD operations for posts. The tutorial covered API route creation, error handling, and the optimization of Prisma client instances. Through practical scripts, we thoroughly tested our API, showcasing a seamless integration of Next.js and Prisma for robust and scalable web applications.
+
+## References
+  
+  1. [Routing: API Routes | Next.js.](https://nextjs.org/docs/pages/building-your-application/routing/api-routes)  
+  2. [Prisma Relational Database.](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgresql)  
+  3. [How to Build a Fullstack App with Next.js, Prisma, & PostgreSQL.](https://vercel.com/guides/nextjs-prisma-postgres) 
