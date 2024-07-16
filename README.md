@@ -20,11 +20,11 @@ This repository contains the code for my personal portfolio. Please give it a тн
 
 ### Deploy blog separately
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAntonyJudeShaman%2FPortfolio-3.0%2Ftree%2Fmain%2FBlog&project-name=Portfolio&repository-name=Portfolio-3.0&env=NEXT_PUBLIC_GITHUB_TOKEN&envDescription=Required)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAntonyJudeShaman%2FPortfolio-3.0%2Ftree%2Fmain%2FBlog&project-name=Portfolio-Blog&repository-name=portfolio_blog)
 
 ### Deploy the main portfolio
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAntonyJudeShaman%2FPortfolio-3.0&project-name=Portfolio&repository-name=Portfolio-3.0&env=NEXT_PUBLIC_GITHUB_TOKEN&envDescription=Required)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAntonyJudeShaman%2FPortfolio-3.0&project-name=Portfolio&repository-name=portfolio-3.0&env=NEXT_PUBLIC_GITHUB_TOKEN&envDescription=Required)
 
 ## Prerequisites
 
