@@ -68,7 +68,8 @@ cp .env.example .env.local
 ```
 
 > [!NOTE]
-> Get your Github personal access token from [here](https://github.com/settings/tokens/new) and add it to the `.env.local` file. Select the > **public_repo** under the `repo` scope to access your repositories.
+> Get your Github personal access token from [here](https://github.com/settings/tokens/new) and add it to the `.env.local` file.
+> Select the **public_repo** under the `repo` scope to access your repositories.
 
 > [!IMPORTANT]  
 > _Github personal access token is needed to display your project repositories in the projects page_
