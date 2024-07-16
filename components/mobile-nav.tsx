@@ -8,6 +8,7 @@ import { useLockBody } from "hooks/use-lock-body";
 import { ModeToggle } from "./themeToggler";
 import { Gradient } from "@/components/gradient";
 import { motion } from "framer-motion";
+import { siteConfig } from "config/site";
 
 interface MobileNavProps {
   items: MainNavItem[];

@@ -22,31 +22,33 @@ export function MainNav({ items, children }: MainNavProps) {
   return (
     <div className="flex z-50 max-w-full bg-transparent md:gap-10">
       <div className="ml-auto">
-        
-      <Link
-        href="/"
-        className="hidden  items-center bg-transparent space-x-2 md:flex"
-        aria-label="BIND"
-      >
-        <span
+        <Link
+          href="/"
+          className="hidden  items-center bg-transparent space-x-2 md:flex"
           aria-label="BIND"
-          className="hidden logo-font text-4xl font-display sm:inline-block"
         >
-          <p className="logo-font select-none font-display" aria-label="BIND">
-            Antony
-          </p>
-        </span>
-      </Link>
+          <span
+            aria-label="BIND"
+            className="hidden logo-font text-4xl font-display sm:inline-block"
+          >
+            <p className="logo-font select-none font-display" aria-label="BIND">
+              Antony
+            </p>
+          </span>
+        </Link>
         <button
           className="flex justify-between bg-transparent items-center space-x-2 md:hidden"
           onClick={toggleMobileMenu}
           aria-label="open menu"
-          style={{zIndex:999999}} 
+          style={{ zIndex: 999999 }}
         >
           {showMobileMenu ? (
-            <Icons.close style={{zIndex:9999999999}} />
+            <Icons.close style={{ zIndex: 9999999999 }} />
           ) : (
-            <div className="burger invert dark:invert-0" style={{zIndex:999999999}}>
+            <div
+              className="burger invert dark:invert-0"
+              style={{ zIndex: 999999999 }}
+            >
               <input type="checkbox" id="burger" />
               <span></span>
               <span></span>
