@@ -31,7 +31,7 @@ export default function NavMain({
       <div className="flex flex-row mr-5 items-center justify-between space-x-2 bg">
         <p
           className="logo-font select-none  md:hidden pl-6 md:pl-2  flex-1 text-4xl font-bold"
-          aria-label="BIND"
+          aria-label="AJS"
           style={{ zIndex: 999999999 }}
         >
           Antony

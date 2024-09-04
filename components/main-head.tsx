@@ -12,7 +12,7 @@ import { Eye } from "lucide-react";
 
 function MainHead() {
   return (
-    <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-4 md:ml-12 max-h-screen max-w-screen">
+    <div className="flex flex-col md:-mt-0 z-60 mt-0 -ml-4 md:ml-8 max-h-screen max-w-screen">
       <NavMain />
       <div className="flex flex-row 2xl:justify-center">
         <div

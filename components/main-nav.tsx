@@ -24,14 +24,14 @@ export function MainNav({ items, children }: MainNavProps) {
       <div className="ml-auto">
         <Link
           href="/"
-          className="hidden  items-center bg-transparent space-x-2 md:flex"
-          aria-label="BIND"
+          className="hidden items-center bg-transparent space-x-2 md:flex"
+          aria-label="AJS"
         >
           <span
-            aria-label="BIND"
+            aria-label="AJS"
             className="hidden logo-font text-4xl font-display sm:inline-block"
           >
-            <p className="logo-font select-none font-display" aria-label="BIND">
+            <p className="select-none " aria-label="AJS">
               Antony
             </p>
           </span>

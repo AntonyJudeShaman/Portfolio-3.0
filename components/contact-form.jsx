@@ -118,7 +118,7 @@ export function Contactform({ className }) {
             >
               Fill in the form to contact me or send an email to{" "}
               <Link
-                href="mailto:antonyjudeshaman@gmail.com"
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=antonyjudeshaman@gmail.com&su=Message%20from%20portfolio&body=Hi%20Antony%2C%0D%0A%0D%0AI%20wanted%20to%20reach%20out%20to%20you%20regarding%20`}
                 aria-label="Mail: antonyjudeshaman@gmail.com"
               >
                 <span className="md:text-2xl text-xl hover:text-purple-700 hover:underline hover:transition-transformation hover:duration-1000 text-purple-600 font-display">
@@ -201,7 +201,8 @@ export function Contactform({ className }) {
               toast.success(
                 "Your details have been submitted. I will contact you shortly.",
                 {
-                  className: "bg-white dark:text-white text-black dark:bg-black",
+                  className:
+                    "bg-white dark:text-white text-black dark:bg-black",
                 }
               ) && (
                 <div className="pl-3 text-green-700 font-pops pb-2">

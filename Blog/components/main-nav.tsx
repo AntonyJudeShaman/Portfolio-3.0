@@ -19,9 +19,9 @@ export function MainNav({ items, children }) {
         <Link
           href="/"
           className="logo-font  hidden items-center space-x-2 bg-transparent font-display text-4xl sm:inline-block md:flex"
-          aria-label="BIND"
+          aria-label="AJS"
         >
-          <span className="logo-font select-none font-display" aria-label="BIND">
+          <span className="logo-font select-none font-display" aria-label="AJS">
             Antony
           </span>
         </Link>

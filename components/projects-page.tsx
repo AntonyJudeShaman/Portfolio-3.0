@@ -191,7 +191,6 @@ export default function ProjectPage() {
                   ))}
                 </>
               ) : (
-                // my featured project is a private repo and cannot make it public, so its hardcoded.
                 featured.map((project) => (
                   <Card key={project.name}>
                     <Link href={project.html_url} target="_blank">
