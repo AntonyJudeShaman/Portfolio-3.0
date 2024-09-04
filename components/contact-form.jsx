@@ -78,7 +78,7 @@ export function Contactform({ className }) {
       try {
         const res = await sendEmail(e);
 
-        if (res.status === "200") {
+        if (res.status === 200) {
           setTimeout(() => {
             setLoading(false);
           }, 2000);
