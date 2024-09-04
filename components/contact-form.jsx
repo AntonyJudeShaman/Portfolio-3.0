@@ -59,15 +59,15 @@ export function Contactform({ className }) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_2akrt2i",
-      "template_lpx92wn",
+    return emailjs.sendForm(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
       form.current,
-      "D80v0R3S-4gwffYhc"
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
     );
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
       setLoading(true);
@@ -75,11 +75,33 @@ export function Contactform({ className }) {
       setEmail("");
       setMessage("");
 
-      sendEmail(e);
-      setTimeout(() => {
+      try {
+        const res = await sendEmail(e);
+
+        if (res.status === "200") {
+          setTimeout(() => {
+            setLoading(false);
+          }, 2000);
+          openDialog();
+          toast.success(
+            "Your details have been submitted. I will contact you shortly.",
+            {
+              className: "bg-white dark:text-white text-black dark:bg-black",
+            }
+          );
+        } else {
+          setLoading(false);
+          toast.error("Error in sending the email. Please try again later.", {
+            className: "bg-white dark:text-white text-black dark:bg-black",
+          });
+          throw new Error("Email sending failed");
+        }
+      } catch (error) {
         setLoading(false);
-      }, 2000);
-      openDialog();
+        toast.error("Error in sending the email. Please try again later.", {
+          className: "bg-white dark:text-white text-black dark:bg-black",
+        });
+      }
     }
   };
 
@@ -197,20 +219,13 @@ export function Contactform({ className }) {
                 onChange={(e) => setMessage(e.target.value)}
               />
             </div>
-            {showDialog &&
-              toast.success(
-                "Your details have been submitted. I will contact you shortly.",
-                {
-                  className:
-                    "bg-white dark:text-white text-black dark:bg-black",
-                }
-              ) && (
-                <div className="pl-3 text-green-700 font-pops pb-2">
-                  <p>
-                    Your details has been submitted. I will contact you shortly.
-                  </p>
-                </div>
-              )}
+            {showDialog && (
+              <div className="pl-3 text-green-700 font-pops pb-2">
+                <p>
+                  Your details has been submitted. I will contact you shortly.
+                </p>
+              </div>
+            )}
 
             <div className="mb-20 mr-4" style={{ zIndex: 9999999 }}>
               <Button2
