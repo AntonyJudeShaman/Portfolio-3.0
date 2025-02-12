@@ -21,7 +21,7 @@
     "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-slot": "^1.0.2",
-    "@typebot.io/js": "^0.2.31",
+    "@typebot.io/js": "^0.3.20",
     "@typebot.io/nextjs": "^0.2.31",
     "@typebot.io/react": "^0.2.31",
     "@typeform/embed-react": "^3.10.0",
