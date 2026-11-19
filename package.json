@@ -23,7 +23,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@typebot.io/js": "^0.2.31",
     "@typebot.io/nextjs": "^0.2.31",
-    "@typebot.io/react": "^0.2.31",
+    "@typebot.io/react": "^0.3.15",
     "@typeform/embed-react": "^3.10.0",
     "@vercel/analytics": "^1.1.1",
     "class-variance-authority": "^0.7.0",
