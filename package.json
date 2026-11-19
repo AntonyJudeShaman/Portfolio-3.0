@@ -35,7 +35,7 @@
     "gsap": "^3.12.3",
     "lucide-react": "^0.294.0",
     "material-ui": "^0.20.2",
-    "next": "14.0.4",
+    "next": "14.2.10",
     "next-contentlayer": "latest",
     "next-themes": "^0.2.1",
     "prop-types": "^15.8.1",
